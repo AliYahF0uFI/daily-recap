@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — Tuesday, June 16, 2026</title>
-  <meta property="og:title" content="Daily Tech &amp; AI Recap — Tuesday, June 16, 2026" />
-  <meta property="og:description" content="Meta launches Muse Spark LLM as Microsoft phases out Claude Code and Patch Tuesday drops a record 208 CVEs including a wormable Windows kernel zero-day." />
+  <title>Daily Tech Recap — Tuesday, June 16 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — Tuesday, June 16 2026" />
+  <meta property="og:description" content="US government pulled Anthropic's Fable 5 and Mythos 5 three days after launch — the first government-forced takedown of a frontier AI model." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://AliYahF0uFI.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236C63FF'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='13' fill='white'>AY</text></svg>" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
       --bg: #0C0C0F; --surface: #141417; --surface2: #1C1C21;
       --border: rgba(255,255,255,0.07); --border2: rgba(255,255,255,0.12);
@@ -23,18 +25,42 @@
       --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px;
       --font-display: 'Syne', sans-serif; --font-body: 'Inter', sans-serif;
     }
+
+    [data-theme="light"] {
+      --bg: #F6F6F9; --surface: #FFFFFF; --surface2: #F0EFF6;
+      --border: rgba(0,0,0,0.08); --border2: rgba(0,0,0,0.15);
+      --text: #0C0C0F; --muted: #6B6B78;
+      --accent: #5B52EE; --accent2: #00A882;
+      --danger: #E03E3E; --amber: #D4900A; --blue: #2A7FD4;
+    }
+
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 15px; line-height: 1.7; min-height: 100vh; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 15px; line-height: 1.7; min-height: 100vh; transition: background 0.2s, color 0.2s; }
+
+    /* ── Header ── */
     header { border-bottom: 1px solid var(--border); padding: 2rem 0 1.5rem; }
     .container { max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
     .header-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
     .logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 8px; }
     .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
+    .header-right { display: flex; align-items: center; gap: 8px; }
     .date-badge { font-size: 12px; color: var(--muted); background: var(--surface2); border: 1px solid var(--border); padding: 4px 12px; border-radius: 999px; }
+    .theme-toggle { background: var(--surface2); border: 1px solid var(--border); color: var(--muted); width: 32px; height: 32px; border-radius: 999px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 15px; transition: border-color 0.15s; }
+    .theme-toggle:hover { border-color: var(--border2); }
     .headline { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 0.5rem; }
     .headline span { color: var(--accent); }
     .subline { font-size: 14px; color: var(--muted); }
-    .bio-card { display: flex; align-items: center; gap: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.5rem; margin: 1.5rem auto; max-width: 780px; }
+
+    /* ── CTA Buttons ── */
+    .cta-bar { display: flex; gap: 10px; flex-wrap: wrap; margin: 1.5rem auto; max-width: 780px; padding: 0 1.5rem; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border-radius: 999px; font-size: 13px; font-weight: 600; text-decoration: none; border: 1px solid var(--border); transition: all 0.15s; cursor: pointer; }
+    .cta-btn-star { background: var(--surface); color: var(--text); }
+    .cta-btn-star:hover { border-color: var(--amber); color: var(--amber); }
+    .cta-btn-wa { background: #25D366; color: #fff; border-color: #25D366; }
+    .cta-btn-wa:hover { background: #1ebe5a; border-color: #1ebe5a; }
+
+    /* ── Bio card ── */
+    .bio-card { display: flex; align-items: center; gap: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.5rem; margin: 0 auto 0; max-width: 780px; }
     .bio-avatar { width: 44px; height: 44px; border-radius: 50%; background: rgba(108,99,255,0.2); color: var(--accent); font-family: var(--font-display); font-size: 15px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .bio-info { display: flex; flex-direction: column; gap: 3px; }
     .bio-name { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--text); }
@@ -42,11 +68,15 @@
     .bio-links { display: flex; gap: 12px; margin-top: 4px; }
     .bio-links a { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--accent); text-decoration: none; transition: opacity 0.15s; }
     .bio-links a:hover { opacity: 0.75; }
+
+    /* ── TL;DR ── */
     .tldr-strip { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin: 2rem 0; }
     .tldr-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
     .tldr-list { list-style: none; display: flex; flex-direction: column; gap: 6px; counter-reset: item; }
     .tldr-list li { font-size: 13.5px; color: var(--text); display: flex; align-items: baseline; gap: 8px; }
     .tldr-list li::before { content: counter(item); counter-increment: item; font-size: 11px; font-weight: 600; color: var(--accent); min-width: 16px; }
+
+    /* ── Sections ── */
     .section { margin: 2.5rem 0; }
     .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
     .section-icon { width: 32px; height: 32px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
@@ -57,6 +87,8 @@
     .theme-sec .section-icon { background: rgba(255,92,92,0.15); color: var(--danger); }
     .theme-oss .section-icon { background: rgba(0,212,164,0.15); color: var(--accent2); }
     .theme-dev .section-icon { background: rgba(245,166,35,0.15); color: var(--amber); }
+
+    /* ── Story cards ── */
     .story-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 0.75rem; transition: border-color 0.15s, background 0.15s; text-decoration: none; display: block; color: inherit; }
     .story-card:hover { border-color: var(--border2); background: var(--surface2); }
     .story-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
@@ -69,25 +101,38 @@
     .theme-dev .story-tag { background: rgba(245,166,35,0.15); color: var(--amber); }
     .story-headline { font-family: var(--font-display); font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text); margin-bottom: 6px; line-height: 1.3; }
     .story-summary { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+
+    /* ── Footer ── */
     footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 3rem; text-align: center; }
     footer p { font-size: 12px; color: var(--muted); line-height: 1.8; }
     footer a { color: var(--accent); text-decoration: none; }
-    @media (max-width: 600px) { .header-top { flex-direction: column; align-items: flex-start; } .bio-card { flex-direction: column; align-items: flex-start; } }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .header-top { flex-direction: column; align-items: flex-start; }
+      .bio-card { flex-direction: column; align-items: flex-start; }
+      .cta-bar { padding: 0 1.5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
   </style>
 </head>
 <body>
+
 <header>
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">Tuesday, June 16, 2026</span>
+      <div class="header-right">
+        <span class="date-badge">Tuesday, June 16 2026</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
     </div>
-    <h1 class="headline">Tech &amp; AI<br><span>Daily Brief</span></h1>
+    <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
   </div>
 </header>
 
-<div class="container">
+<div class="container" style="margin-top: 1.5rem;">
   <div class="bio-card">
     <div class="bio-avatar">AY</div>
     <div class="bio-info">
@@ -107,123 +152,172 @@
   </div>
 </div>
 
+<div class="cta-bar">
+  <a class="cta-btn cta-btn-star" href="https://github.com/AliYahF0uFI/daily-recap" target="_blank" rel="noopener">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    Star this repo
+  </a>
+  <a class="cta-btn cta-btn-wa" href="https://chat.whatsapp.com/IW3XVeJKuoPGNuGcXJ6tcu" target="_blank" rel="noopener">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Join WhatsApp Community
+  </a>
+</div>
+
 <main class="container">
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>Meta launched Muse Spark, its first superintelligence-lab LLM, alongside a $115–135B AI infrastructure spending pledge for 2026.</li>
-      <li>Microsoft's June Patch Tuesday fixes a record 208 CVEs, including a wormable CVSS 9.8 Windows kernel zero-day that needs immediate patching.</li>
-      <li>Microsoft will revoke Claude Code licenses in its Experiences + Devices division by June 30, redirecting devs to GitHub Copilot CLI.</li>
-      <li>Anthropic's Project Glasswing gave Claude Mythos Preview to 50 partner orgs for defensive security scanning, surfacing 23,019 open-source vulnerabilities.</li>
-      <li>Google released Gemini 3.1 Flash-Lite with 2.5× faster responses at just $0.25/M input tokens, targeting high-volume developer workloads.</li>
+      <li>US government forced Anthropic to suspend Fable 5 &amp; Mythos 5 just 3 days after launch — the first government-forced takedown of a frontier AI model.</li>
+      <li>Microsoft June Patch Tuesday set an all-time record with 198 CVEs fixed, including 3 zero-days already known to attackers before patches shipped.</li>
+      <li>Europol and the US Secret Service dismantled AudiA6, a crypto-laundering network that washed €336M for ransomware gangs since 2021.</li>
+      <li>Oracle's 30,000-person layoff enters its final phase as companies redirect billions from headcount cuts into AI infrastructure buildouts.</li>
+      <li>GitHub Copilot moved to usage-based AI Credits billing on June 1, with a new $100/mo Max plan bundling $200 in monthly credits.</li>
     </ul>
   </div>
 
+  <!-- AI & LLM -->
   <section class="section theme-ai">
     <div class="section-header">
       <div class="section-icon">🤖</div>
       <span class="section-title">AI &amp; LLM Updates</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">WaveSpeed Blog</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Meta Unveils Muse Spark, Its First Flagship LLM from Superintelligence Labs</p>
-      <p class="story-summary">Meta launched Muse Spark under Chief AI Officer Alexandr Wang's newly formed Superintelligence Labs, delivering competitive multimodal reasoning and agentic performance at a fraction of Llama 4's compute cost. The launch came alongside Meta's announcement of $115–135B in AI capital expenditures for 2026, nearly double last year's spend.</p>
+
+    <a class="story-card" href="https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">US Government Forces Anthropic to Pull Fable 5 &amp; Mythos 5 Three Days After Launch</p>
+      <p class="story-summary">The US government issued an emergency export control directive on June 12 ordering Anthropic to suspend worldwide access to its newest frontier models Fable 5 and Mythos 5, citing a potential jailbreak vulnerability — marking the first government-forced takedown of a publicly deployed frontier AI. Anthropic publicly disagreed, warning that applying this standard across the industry would effectively freeze all new frontier model deployments worldwide.</p>
     </a>
-    <a class="story-card" href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Crescendo AI</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Anthropic's Project Glasswing Deploys Claude Mythos Preview to 50 Security Partner Orgs</p>
-      <p class="story-summary">Anthropic gave select partners — including AWS, Apple, Google, and Microsoft — controlled access to its unreleased Claude Mythos Preview model to find and fix critical software vulnerabilities. In its first month, the initiative surfaced 23,019 vulnerabilities across more than 1,000 open-source projects.</p>
+
+    <a class="story-card" href="https://decrypt.co/364948/alibaba-qwen-3-6-max-preview-most-powerful-model" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Decrypt</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Alibaba Drops Qwen 3.6 Max Preview — Claims Top Score on 6 Coding Benchmarks</p>
+      <p class="story-summary">Alibaba's Qwen team released Qwen3.6-Max-Preview, a proprietary model that topped six major coding benchmarks including SWE-bench Pro and Terminal-Bench 2.0, with a 256K-token context window and API compatibility with both OpenAI and Anthropic specifications. The model is available via Qwen Studio and Alibaba Cloud API but ships without open weights.</p>
     </a>
-    <a class="story-card" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">LLM Stats</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Google Launches Gemini 3.1 Flash-Lite — 2.5× Faster at Just $0.25/M Input Tokens</p>
-      <p class="story-summary">Google introduced Gemini 3.1 Flash-Lite, an efficiency-focused model delivering 2.5× faster response times and 45% faster output generation compared to earlier Gemini versions. Priced at $0.25 per million input tokens, it directly targets cost-sensitive, high-volume developer workloads.</p>
+
+    <a class="story-card" href="https://www.buildfastwithai.com/blogs/ai-news-today-june-15-2026" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Build Fast With AI</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Google Gemini 3.5 Pro in Final Stretch — 2M Token Context &amp; Deep Think Reasoning Mode Coming Before June 30</p>
+      <p class="story-summary">Google's Gemini 3.5 Pro is in its final pre-launch testing phase featuring a 2-million-token context window and a new "Deep Think" reasoning mode expected to ship before the end of the month. Early benchmark results show strong multimodal performance across documents, code, images, and research workloads.</p>
     </a>
   </section>
 
+  <!-- Tech Industry -->
   <section class="section theme-tech">
     <div class="section-header">
       <div class="section-icon">📱</div>
       <span class="section-title">Tech Industry News</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://www.techtimes.com/articles/317392/20260529/tech-layoffs-reach-142000-2026-profitable-companies-cut-jobs-fund-700b-ai-infrastructure.htm" target="_blank" rel="noopener">
+
+    <a class="story-card" href="https://www.techtimes.com/articles/317527/20260601/oracles-30000-layoffs-enter-final-phase-sign-release-forfeit-severance.htm" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">TechTimes</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Oracle Leads 2026 Tech Layoffs with 30,000 Cuts to Fund AI Infrastructure Push</p>
-      <p class="story-summary">Oracle made the largest single layoff event of 2026, cutting approximately 30,000 positions as it accelerates its pivot toward AI infrastructure and cloud data centers. Industry-wide, tech layoffs have reached 183,966 workers across 247 events in 2026, with AI spending reallocation cited as the primary driver.</p>
+      <p class="story-headline">Oracle's 30,000-Person Layoff Enters Final Phase as AI Infrastructure Pivot Accelerates</p>
+      <p class="story-summary">Oracle's workforce reduction — 18% of its 162,000-person headcount and the largest layoff in the company's history — is now in its final phase, with departing employees required to sign releases to claim severance. The company raised $30B in debt in February to fund Oracle Cloud Infrastructure, with workforce savings expected to free an additional $8–10B annually for GPU and data center buildout.</p>
     </a>
-    <a class="story-card" href="https://news.crunchbase.com/startups/tech-layoffs/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Crunchbase News</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Amdocs Announces 2,900 Job Cuts in Latest Wave of Enterprise AI Restructuring</p>
-      <p class="story-summary">St. Louis-based enterprise software provider Amdocs confirmed this week that 2,900 employees will lose their positions, leading the latest weekly batch of industry-wide layoffs. The move reflects a broader pattern of enterprise software companies restructuring headcount budgets to fund AI-driven product transformation.</p>
+
+    <a class="story-card" href="https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">The Next Web</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">ClickUp Cuts 22% of Staff and Promises $1M Salary Bands in AI-First "100x Org" Restructure</p>
+      <p class="story-summary">ClickUp CEO Zeb Evans announced a 22% reduction of the company's 1,300-person workforce, framing it as an AI transformation as the company now runs 3,000 internal AI agents — a 3-to-1 ratio of agents to employees. Remaining staff will be eligible for million-dollar salary bands as the company restructures around what Evans calls a "100x org."</p>
     </a>
-    <a class="story-card" href="https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">WaveSpeed Blog</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Meta Commits $115–135B to AI CapEx in 2026, Nearly Doubling Last Year's Infrastructure Spend</p>
-      <p class="story-summary">Meta announced AI capital expenditures of $115–135 billion for 2026, nearly double its 2025 AI infrastructure budget, positioning it as one of the largest AI infrastructure investors globally. The commitment accompanies the debut of Muse Spark from the newly formed Superintelligence Labs.</p>
+
+    <a class="story-card" href="https://skillsyncer.com/layoffs-tracker" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Skillsyncer</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">2026 Tech Layoffs Top 183,000 Workers — Goldman Sachs Pins 16,000 Monthly Cuts Directly on AI</p>
+      <p class="story-summary">The 2026 tech layoff tally has reached 183,966 workers across 247 events as of mid-June, averaging over 1,100 job losses per day. Goldman Sachs estimates AI-attributed payroll reductions are running at more than 16,000 per month, as Meta, Amazon, and Oracle redirect headcount savings toward a combined $700B AI infrastructure buildout.</p>
     </a>
   </section>
 
+  <!-- Cybersecurity -->
   <section class="section theme-sec">
     <div class="section-header">
       <div class="section-icon">🔐</div>
       <span class="section-title">Cybersecurity</span>
       <span class="section-count">2 stories</span>
     </div>
+
     <a class="story-card" href="https://cybersecuritynews.com/microsoft-patch-tuesday-june-2026/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Cybersecurity News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Microsoft June 2026 Patch Tuesday: Record 208 CVEs Fixed, 3 Zero-Days Included</p>
-      <p class="story-summary">Microsoft's June 2026 Patch Tuesday is the largest in the program's history at 208 CVEs — 32 critical and 166 important — including three zero-days that were actively exploited or publicly known before a patch was available. Admins are urged to prioritize this cycle immediately given the presence of a wormable Windows kernel RCE among the fixes.</p>
+      <div class="story-meta"><span class="story-source">CyberSecurity News</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Microsoft June 2026 Patch Tuesday: Record 198 CVEs Fixed Including 3 Zero-Days and 54 RCE Flaws</p>
+      <p class="story-summary">Microsoft's June 2026 Patch Tuesday addressed 198 vulnerabilities — the largest single release in the program's history, surpassing October 2025's record of 167 — including three actively exploited zero-days and 54 remote code execution flaws. Key CVEs include CVE-2026-50507 (Windows BitLocker bypass) and CVE-2026-49160 (HTTP.sys DoS), both already known to attackers before the June 9 patch drop.</p>
     </a>
-    <a class="story-card" href="https://www.zerodayinitiative.com/blog/2026/6/9/the-june-2026-security-update-review" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Zero Day Initiative</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">CVE-2026-45657: Wormable Windows Kernel TCP/IP RCE Rated CVSS 9.8 — Patch Immediately</p>
-      <p class="story-summary">CVE-2026-45657 is a critical unauthenticated remote code execution flaw in the Windows kernel's TCP/IP stack, allowing attackers to run code at SYSTEM level with zero user interaction and a CVSS score of 9.8. Security teams classify it as wormable — capable of self-propagating across networks — making it the most urgent fix in this month's record Patch Tuesday batch.</p>
+
+    <a class="story-card" href="https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Europol Dismantles AudiA6 Crypto Laundering Network That Washed €336M for Ransomware Gangs</p>
+      <p class="story-summary">A coordinated international operation on June 10 led by the US Secret Service, IRS-CI, and Europol arrested two alleged AudiA6 administrators in Georgia and seized 25 domains, 30 servers, 80 vehicles, and froze €692,000 in cryptocurrency. The takedown cuts off a key financial pipeline ransomware groups have used to launder over €336 million (~$389M) since AudiA6 launched in 2021.</p>
     </a>
   </section>
 
+  <!-- Open Source -->
   <section class="section theme-oss">
     <div class="section-header">
       <div class="section-icon">🔓</div>
       <span class="section-title">Open Source</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://www.firecrawl.dev/blog/best-github-repos" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Firecrawl Blog</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">OpenClaw Surpasses 210,000 GitHub Stars as On-Device AI Assistant Gains Developer Momentum</p>
-      <p class="story-summary">OpenClaw, a personal AI assistant that runs entirely on-device and connects AI models to over 50 integrations via a local gateway, exploded from 9,000 to 210,000+ stars since going viral in early 2026. The project represents growing developer appetite for privacy-first, locally-hosted AI tooling as an alternative to cloud-dependent assistants.</p>
+
+    <a class="story-card" href="https://medium.com/@aftab001x/openclaw-just-beat-reacts-10-year-github-record-in-60-days-now-nobody-knows-what-to-do-with-it-937b8f370507" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Medium</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">OpenClaw Surpasses 350,000 GitHub Stars — Beats React's Decade-Long Record in Under 60 Days</p>
+      <p class="story-summary">OpenClaw, the local-first AI agent built by Peter Steinberger, has now exceeded 350,000 GitHub stars — overtaking React's ten-year record in roughly 60 days to become the most-starred software project in GitHub history. The project remains open-source under a foundation structure after Steinberger joined OpenAI in February, continuing to grow across developer workflow automation and personal AI agent use cases.</p>
     </a>
-    <a class="story-card" href="https://medium.com/data-science-collective/10-open-source-github-projects-every-ai-and-software-developer-should-watch-in-2026-7ea4a7b12951" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Data Science Collective</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">Perplexity AI Releases Bumblebee — Open-Source Supply Chain Scanner for Dev Toolchains</p>
-      <p class="story-summary">Bumblebee is a read-only supply chain security scanner from Perplexity AI that checks dependencies, MCP servers, and editor extensions for suspicious packages in seconds without modifying anything. The project released v0.1.1 in May 2026 and is gaining fast traction as supply chain attacks targeting developer toolchains have intensified.</p>
+
+    <a class="story-card" href="https://github.com/QwenLM/Qwen3.6" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub / Alibaba</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Alibaba Publishes Qwen3.6 Weights on GitHub — Open-Weight Coding Models Challenge Closed Frontier Tier</p>
+      <p class="story-summary">Alibaba's Qwen team released open weights for the Qwen3.6 model series on GitHub under the QwenLM organization, pairing a proprietary hosted flagship with openly licensed variants as is now standard for the project. The open models offer developers an Apache-licensed alternative that competes on agentic coding benchmarks against closed frontier models.</p>
     </a>
   </section>
 
+  <!-- Dev Tools & Infra -->
   <section class="section theme-dev">
     <div class="section-header">
       <div class="section-icon">🛠️</div>
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://windowsnews.ai/article/microsoft-phases-down-claude-code-pushes-developers-to-github-copilot-cli.418710" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Windows News AI</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Microsoft to Phase Out Claude Code Licenses in Experiences + Devices Division by June 30</p>
-      <p class="story-summary">Microsoft will revoke most internal Claude Code licenses in its Experiences + Devices division on June 30, 2026, directing developers to use GitHub Copilot CLI instead. Exceptions will only be granted for research or benchmarking projects that require direct model comparison.</p>
+
+    <a class="story-card" href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Blog</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">GitHub Copilot Switches to AI Credits Billing — New $100/mo Max Tier Live as of June 1</p>
+      <p class="story-summary">GitHub migrated Copilot from flat request-based billing to a usage-based AI Credits system on June 1, with each plan receiving a monthly credit allotment and overages charged at $0.01 per credit. A new Copilot Max plan at $100/month bundles $200 in monthly AI Credits for developers with sustained heavy workloads, available as an upgrade for existing paid subscribers.</p>
     </a>
-    <a class="story-card" href="https://scrimba.com/articles/best-ai-coding-assistants-2026/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Scrimba</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">GitHub Copilot Moves to Usage-Based AI Credits Billing, Launches $100/Mo Max Tier</p>
-      <p class="story-summary">GitHub switched Copilot from request-based to usage-based AI Credits billing across all paid plans on June 1, 2026, changing how costs scale for heavy users. A new $100/month Max tier targets individual developers who need sustained access to the most capable underlying models for large or complex workloads.</p>
+
+    <a class="story-card" href="https://windowsnews.ai/article/microsoft-plans-june-30-2026-shift-from-claude-code-to-copilot-cli.425488" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Windows News</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Microsoft Phases Out Claude Code for Internal Engineers by June 30, Moves to GitHub Copilot CLI</p>
+      <p class="story-summary">Microsoft is cancelling most Claude Code access for its Experiences and Devices division — covering engineers on Windows, Microsoft 365, Outlook, and Teams — effective June 30, redirecting them to GitHub Copilot CLI. The company cited concerns about routing sensitive intellectual property through an external provider outside Microsoft's Azure tenant as the primary driver.</p>
     </a>
   </section>
 </main>
 
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · Tuesday, June 16, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>
+      Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · Tuesday, June 16 2026<br>
+      Sources linked on each card · Stories from the last 24 hours only
+    </p>
   </div>
 </footer>
+
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  const stored = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initial = stored || (prefersDark ? 'dark' : 'light');
+  html.setAttribute('data-theme', initial);
+  toggle.textContent = initial === 'dark' ? '🌙' : '☀️';
+  toggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    toggle.textContent = next === 'dark' ? '🌙' : '☀️';
+    localStorage.setItem('theme', next);
+  });
+</script>
+
 </body>
 </html>
