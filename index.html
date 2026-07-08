@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — July 7, 2026</title>
-  <meta property="og:title" content="Daily Tech & AI Recap — July 7, 2026" />
-  <meta property="og:description" content="Microsoft's Xbox layoffs, an actively-exploited SharePoint RCE, and Anthropic's Fable 5 billing shift lead today's tech brief." />
+  <title>Daily Tech Recap — July 8, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — July 8, 2026" />
+  <meta property="og:description" content="DHS confirms breach of Homeland Security Information Network; 2026 tech layoffs cross 185,000 jobs; critical Gitea auth-bypass flaw under active exploitation." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">July 7, 2026</span>
+      <span class="date-badge">July 8, 2026</span>
     </div>
     <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
@@ -111,89 +111,89 @@
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>Microsoft cut ~4,800 jobs on July 6 in Xbox's biggest-ever restructuring, part of 185,000+ tech layoffs so far in 2026.</li>
-      <li>CISA added an actively-exploited SharePoint RCE (CVE-2026-45659) to its KEV catalog; federal agencies were told to patch by July 4.</li>
-      <li>Anthropic restored Fable 5 globally on July 1 and moves it to usage-credit billing starting July 7.</li>
-      <li>An unpatched Argo CD flaw lets unauthenticated attackers take over Kubernetes clusters — no CVE, no fix yet.</li>
-      <li>GitHub's issue fields hit general availability and Copilot CLI gained live MCP server management this week.</li>
+      <li>DHS confirms breach of its Homeland Security Information Network; Sysdig documents first end-to-end AI agent ransomware attack.</li>
+      <li>2026 tech layoffs cross 185,000 jobs as Oracle, Meta, Microsoft, and Cisco cite AI-driven restructuring.</li>
+      <li>Critical Gitea auth-bypass flaw (CVE-2026-20896) under active exploitation — patch self-hosted instances now.</li>
+      <li>Anthropic's Claude Fable 5 is back in Pro, Max, Team, and Enterprise plans after its export-control suspension was lifted.</li>
+      <li>Addy Osmani's agent-skills repo trends past 72K GitHub stars amid the AI coding-skills boom.</li>
     </ul>
   </div>
   <section class="section theme-ai">
     <div class="section-header">
       <div class="section-icon">🤖</div>
       <span class="section-title">AI &amp; LLM Updates</span>
-      <span class="section-count">3 stories</span>
+      <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://thursdai.news/releases/2026-07" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">ThursdAI</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Anthropic restores Fable 5 globally, shifts access to usage-credit billing</p>
-      <p class="story-summary">Anthropic brought Fable 5 and Mythos 5 back online worldwide on July 1 after US export controls were lifted, adding new cybersecurity classifiers as safeguards. Starting July 7, access through Pro, Max, and Team plans shifts from inclusion in weekly limits to usage-credit billing.</p>
+    <a class="story-card" href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Lushbinary</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Claude Fable 5 Restored to Anthropic's Consumer Plans</p>
+      <p class="story-summary">Anthropic restored Claude Fable 5 on July 1 after the U.S. government lifted export controls that had pulled the model offline for nearly three weeks. As of this week it's back in Pro, Max, Team, and select Enterprise plans for up to 50% of weekly usage limits. (unconfirmed)</p>
     </a>
-    <a class="story-card" href="https://thursdai.news/releases/2026-07" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">ThursdAI</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Google DeepMind ships NanoBanana 2 Lite and OmniFlash through GA Interactions API</p>
-      <p class="story-summary">Google's NanoBanana 2 Lite now generates images in under four seconds for $0.034 per 1,000 images, while OmniFlash — the first entry in its any-to-any Omni family — produces up to 10-second videos with conversational multi-turn editing. Both ship through the newly general-availability Interactions API.</p>
-    </a>
-    <a class="story-card" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">BuildFastWithAI</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">GPT-5.6 model family stays in vetted preview as public rollout window opens</p>
-      <p class="story-summary">OpenAI's GPT-5.6 Sol, Terra, and Luna remain limited to roughly 20 government-vetted organizations, with per-token pricing already set. Analysts expect broader ChatGPT and API access in the July 7–21 window, pending the White House's voluntary AI standards framework (unconfirmed).</p>
+    <a class="story-card" href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">AI Tools Recap</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">White House Drafts Voluntary AI Release Standards With OpenAI, Google, Anthropic</p>
+      <p class="story-summary">The White House has been in advanced talks with the three labs on a voluntary framework for releasing frontier models, with an announcement expected this week. The same report notes Anthropic has overtaken OpenAI on revenue. (unconfirmed)</p>
     </a>
   </section>
   <section class="section theme-tech">
     <div class="section-header">
       <div class="section-icon">📱</div>
       <span class="section-title">Tech Industry News</span>
-      <span class="section-count">3 stories</span>
+      <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Microsoft cuts ~4,800 jobs in largest Xbox restructuring in years</p>
-      <p class="story-summary">Microsoft laid off about 4,800 employees (2.1% of its global workforce) on July 6, with Xbox alone losing 1,600 staff and a plan to cut 3,200 roles through fiscal 2027. Xbox CEO Asha Sharma called it the most significant restructuring in the division's history, citing thin console margins and AI-driven cost cuts.</p>
-    </a>
     <a class="story-card" href="https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">2026 tech layoffs top 185,000 as AI cost-cutting accelerates industry-wide</p>
-      <p class="story-summary">Tracking data shows 267 layoff events across the tech industry in 2026 through July 6, totaling roughly 185,894 jobs — nearly 1,000 per day on average. Oracle, Nike, and Samsung all announced fresh cuts in the past two weeks, with AI adoption repeatedly cited as a driver.</p>
+      <p class="story-headline">2026 Tech Layoffs Cross 185,000 as AI Cited Across Sectors</p>
+      <p class="story-summary">Trackers now count 267 layoff events and roughly 185,900 jobs cut across tech in 2026, with Oracle, Meta, Microsoft, and Cisco among the hardest hit. Companies increasingly cite AI adoption as a driver, shifting roles in coding, support, and content work.</p>
     </a>
-    <a class="story-card" href="https://tech.yahoo.com/general/article/tech-layoffs-2026-more-than-160000-jobs-cut-at-oracle-meta-linkedin-bungie-and-more-companies-144545528.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Yahoo Tech</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Oracle's headcount down 21,000 over the past year as cloud, AI shift continues</p>
-      <p class="story-summary">Oracle disclosed in late June that it eliminated 21,000 positions over the trailing 12 months, a 13% workforce reduction, citing AI-driven changes to its operations and cloud business. The disclosure keeps circulating as tech outlets update their 2026 layoff trackers (unconfirmed exact date).</p>
+    <a class="story-card" href="https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Together AI Raises $800M, Valuation Jumps to $8.3B</p>
+      <p class="story-summary">Neocloud provider Together AI closed an $800 million round that pushes its valuation to $8.3 billion. The raise underscores continued investor appetite for AI infrastructure and compute providers even as the broader market pulls back. (unconfirmed)</p>
     </a>
   </section>
   <section class="section theme-sec">
     <div class="section-header">
       <div class="section-icon">🔐</div>
       <span class="section-title">Cybersecurity</span>
-      <span class="section-count">2 stories</span>
+      <span class="section-count">3 stories</span>
     </div>
+    <a class="story-card" href="https://innovatecybersecurity.com/security-threat-advisory/top-10-cybersecurity-news-july-07-2026-sysdig-documents-first-end-to-end-ai-agent-ransomware-attack-dhs-confirms-breach-of-homeland-security-information-network-and-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Innovate Cybersecurity</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">DHS Confirms Breach of Homeland Security Information Network</p>
+      <p class="story-summary">DHS confirmed a breach of its Homeland Security Information Network, with the intrusion believed to have occurred between late May and early June. Separately, security firm Sysdig documented what it describes as the first end-to-end AI agent ransomware attack. (unconfirmed)</p>
+    </a>
+    <a class="story-card" href="https://innovatecybersecurity.com/security-threat-advisory/top-10-cybersecurity-news-july-07-2026-sysdig-documents-first-end-to-end-ai-agent-ransomware-attack-dhs-confirms-breach-of-homeland-security-information-network-and-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Innovate Cybersecurity</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Critical Gitea Auth-Bypass Flaw Under Active Exploitation</p>
+      <p class="story-summary">Attackers are exploiting CVE-2026-20896, a critical Gitea vulnerability that lets a single crafted HTTP header bypass authentication and expose private repositories and secrets. Admins running self-hosted Gitea instances should patch immediately. (unconfirmed)</p>
+    </a>
     <a class="story-card" href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">CISA adds actively exploited SharePoint RCE (CVE-2026-45659) to its KEV catalog</p>
-      <p class="story-summary">CISA added a high-severity SharePoint Server deserialization flaw (CVSS 8.8) to its Known Exploited Vulnerabilities catalog on July 1 after confirming active exploitation, giving federal agencies until July 4 to patch. Microsoft fixed the bug in May, but unpatched on-prem servers remain a target for ransomware crews like Storm-2603.</p>
-    </a>
-    <a class="story-card" href="https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Unpatched Argo CD repo-server flaw enables unauthenticated Kubernetes cluster takeover</p>
-      <p class="story-summary">Security firm Synacktiv publicly disclosed on July 1 that Argo CD's repo-server can be tricked into executing attacker-controlled scripts via an unauthenticated gRPC call, with no CVE or patch available roughly 18 months after being privately reported. Any org exposing the repo-server's internal port without strict network policies risks full cluster compromise.</p>
+      <p class="story-headline">SharePoint RCE Flaw Added to CISA's Known Exploited Vulnerabilities Catalog</p>
+      <p class="story-summary">CISA added CVE-2026-45659, a remote-code-execution flaw in Microsoft SharePoint Server stemming from deserialization of untrusted data, to its KEV catalog with an 8.8 CVSS score. Federal agencies were directed to apply fixes by July 4.</p>
     </a>
   </section>
   <section class="section theme-oss">
     <div class="section-header">
       <div class="section-icon">🔓</div>
       <span class="section-title">Open Source</span>
-      <span class="section-count">2 stories</span>
+      <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://github.blog/changelog/2026-07-02-issue-fields-are-now-generally-available/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub Changelog</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">GitHub issue fields reach general availability after 40,000+ orgs test it in preview</p>
-      <p class="story-summary">GitHub's structured issue-metadata system — issue fields — moved from public preview to general availability on July 2 across Free, Team, and Enterprise plans, including GitHub Enterprise Server 3.23. Fields are now exposed through GitHub's MCP server so AI tools like Copilot can read and set them directly.</p>
+    <a class="story-card" href="https://github.com/trending" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Trending</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">addyosmani/agent-skills Trends With 72K+ Stars</p>
+      <p class="story-summary">Addy Osmani's agent-skills repo, offering production-grade engineering skills for AI coding agents, is trending on GitHub with over 72,000 stars. It reflects the fast-growing ecosystem of reusable skill packages for tools like Claude Code and Copilot.</p>
     </a>
-    <a class="story-card" href="https://agentgateway.dev/blog/2026-06-17-agentgateway-v1.3.0/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">agentgateway.dev</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">Agentgateway v1.3.0 rebuilds LLM traffic handling for open agentic infrastructure</p>
-      <p class="story-summary">Agentgateway, an open-source proxy for AI agents and MCP servers under the Agentic AI Foundation, shipped v1.3.0 with a rebuilt LLM console, cost tracking, and 13 new provider integrations. The release drew contributions from 41 developers between v1.2.1 and v1.3.0 (unconfirmed exact release date).</p>
+    <a class="story-card" href="https://github.com/trending" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Trending</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">ruvnet/RuView Turns WiFi Signals Into Spatial Intelligence</p>
+      <p class="story-summary">RuView, an open-source project that converts ordinary WiFi signals into real-time spatial intelligence, vital-sign monitoring, and presence detection, is trending with over 78,000 stars. It needs no cameras, sidestepping privacy concerns common to video-based monitoring.</p>
+    </a>
+    <a class="story-card" href="https://github.com/trending" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Trending</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Zackriya-Solutions/meetily Gains Traction as Local-First Meeting Assistant</p>
+      <p class="story-summary">Meetily, a privacy-first AI meeting assistant built on Rust with local Whisper/Parakeet transcription and speaker diarization, is trending with nearly 21,000 stars. It processes everything on-device with no cloud dependency.</p>
     </a>
   </section>
   <section class="section theme-dev">
@@ -202,21 +202,21 @@
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://github.com/github/copilot-cli/blob/main/changelog.md" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">GitHub Copilot CLI adds live MCP server management and faster session resumes</p>
-      <p class="story-summary">The latest Copilot CLI release lets developers list and toggle attached MCP servers mid-session via /mcp list, resume sessions faster, and use a new auto-approve mode where an LLM judge vets routine requests. The update also improves model picking, slash commands, and auth-flow reliability.</p>
-    </a>
-    <a class="story-card" href="https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/" target="_blank" rel="noopener">
+    <a class="story-card" href="https://github.blog/changelog/2026-06-22-new-features-and-claude-as-agent-provider-preview-in-jetbrains-ides/" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">GitHub Changelog</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">GitHub Models set for full retirement on July 30, 2026</p>
-      <p class="story-summary">GitHub confirmed on July 1 that GitHub Models, its in-platform model playground and API, will be fully retired by July 30. Developers relying on it for prototyping are being pointed toward Copilot's model access and third-party inference APIs instead.</p>
+      <p class="story-headline">Claude Gains Agent-Provider Preview in JetBrains IDEs</p>
+      <p class="story-summary">GitHub shipped an update adding Claude as an agent provider in public preview for JetBrains IDEs, alongside message queuing/steering in Copilot CLI sessions and a new agent debug-logs view. Cloud agent execution is now generally available.</p>
+    </a>
+    <a class="story-card" href="https://lushbinary.com/blog/ai-coding-agents-comparison-cursor-windsurf-claude-copilot-kiro-2026/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Lushbinary</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Windsurf Rebrands to Devin Desktop After Cognition Acquisition</p>
+      <p class="story-summary">Windsurf has been rebranded as Devin Desktop following its acquisition by Cognition, with windsurf.com now redirecting to devin.ai. The product's new pricing spans Free, Pro ($20/mo), Max ($200/mo), and Teams ($80/mo base + $40/seat) tiers. (unconfirmed)</p>
     </a>
   </section>
 </main>
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · July 7, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · July 8, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
   </div>
 </footer>
 </body>
