@@ -1,1 +1,223 @@
-&lt;!DOCTYPE html&gt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Recap — July 14, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — July 14, 2026" />
+  <meta property="og:description" content="Microsoft's July Patch Tuesday fixes a wormable Windows RCE, Microsoft cuts 4,800 Xbox jobs, Apple loses its EU gatekeeper appeal, Claude's Fable 5 free-access window closes, and Windows 11 ships Point-in-time Restore." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0C0C0F; --surface: #141417; --surface2: #1C1C21;
+      --border: rgba(255,255,255,0.07); --border2: rgba(255,255,255,0.12);
+      --text: #F0EFE8; --muted: #8A8A96;
+      --accent: #6C63FF; --accent2: #00D4A4;
+      --danger: #FF5C5C; --amber: #F5A623; --blue: #4A9EFF;
+      --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px;
+      --font-display: 'Syne', sans-serif; --font-body: 'Inter', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 15px; line-height: 1.7; min-height: 100vh; }
+    header { border-bottom: 1px solid var(--border); padding: 2rem 0 1.5rem; }
+    .container { max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
+    .header-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
+    .date-badge { font-size: 12px; color: var(--muted); background: var(--surface2); border: 1px solid var(--border); padding: 4px 12px; border-radius: 999px; }
+    .headline { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 0.5rem; }
+    .headline span { color: var(--accent); }
+    .subline { font-size: 14px; color: var(--muted); }
+    .bio-card { display: flex; align-items: center; gap: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.5rem; margin: 1.5rem auto; max-width: 780px; }
+    .bio-avatar { width: 44px; height: 44px; border-radius: 50%; background: rgba(108,99,255,0.2); color: var(--accent); font-family: var(--font-display); font-size: 15px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .bio-info { display: flex; flex-direction: column; gap: 3px; }
+    .bio-name { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--text); }
+    .bio-tagline { font-size: 12px; color: var(--muted); }
+    .bio-links { display: flex; gap: 12px; margin-top: 4px; }
+    .bio-links a { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--accent); text-decoration: none; transition: opacity 0.15s; }
+    .bio-links a:hover { opacity: 0.75; }
+    .tldr-strip { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin: 2rem 0; }
+    .tldr-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+    .tldr-list { list-style: none; display: flex; flex-direction: column; gap: 6px; counter-reset: item; }
+    .tldr-list li { font-size: 13.5px; color: var(--text); display: flex; align-items: baseline; gap: 8px; }
+    .tldr-list li::before { content: counter(item); counter-increment: item; font-size: 11px; font-weight: 600; color: var(--accent); min-width: 16px; }
+    .section { margin: 2.5rem 0; }
+    .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+    .section-icon { width: 32px; height: 32px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+    .section-title { font-family: var(--font-display); font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text); }
+    .section-count { margin-left: auto; font-size: 11px; color: var(--muted); background: var(--surface2); padding: 2px 8px; border-radius: 999px; }
+    .theme-ai .section-icon { background: rgba(108,99,255,0.15); color: var(--accent); }
+    .theme-tech .section-icon { background: rgba(74,158,255,0.15); color: var(--blue); }
+    .theme-sec .section-icon { background: rgba(255,92,92,0.15); color: var(--danger); }
+    .theme-oss .section-icon { background: rgba(0,212,164,0.15); color: var(--accent2); }
+    .theme-dev .section-icon { background: rgba(245,166,35,0.15); color: var(--amber); }
+    .story-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 0.75rem; transition: border-color 0.15s, background 0.15s; text-decoration: none; display: block; color: inherit; }
+    .story-card:hover { border-color: var(--border2); background: var(--surface2); }
+    .story-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+    .story-source { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+    .story-tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 500; }
+    .theme-ai .story-tag { background: rgba(108,99,255,0.15); color: var(--accent); }
+    .theme-tech .story-tag { background: rgba(74,158,255,0.15); color: var(--blue); }
+    .theme-sec .story-tag { background: rgba(255,92,92,0.15); color: var(--danger); }
+    .theme-oss .story-tag { background: rgba(0,212,164,0.15); color: var(--accent2); }
+    .theme-dev .story-tag { background: rgba(245,166,35,0.15); color: var(--amber); }
+    .story-headline { font-family: var(--font-display); font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text); margin-bottom: 6px; line-height: 1.3; }
+    .story-summary { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+    footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 3rem; text-align: center; }
+    footer p { font-size: 12px; color: var(--muted); line-height: 1.8; }
+    footer a { color: var(--accent); text-decoration: none; }
+    @media (max-width: 600px) { .header-top { flex-direction: column; align-items: flex-start; } .bio-card { flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-top">
+      <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
+      <span class="date-badge">July 14, 2026</span>
+    </div>
+    <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
+    <p class="subline">Auto-generated every morning · Curated for developers</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="bio-card">
+    <div class="bio-avatar">AY</div>
+    <div class="bio-info">
+      <p class="bio-name">Ali Yahfoufi</p>
+      <p class="bio-tagline">Software Developer &amp; AI Automation Builder</p>
+      <div class="bio-links">
+        <a href="https://github.com/AliYahF0uFI" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <div class="tldr-strip">
+    <p class="tldr-label">TL;DR — Top stories today</p>
+    <ul class="tldr-list">
+      <li>Microsoft's July Patch Tuesday fixes a fully wormable CVSS 9.8 Windows RCE flaw affecting every machine since Server 2008.</li>
+      <li>Microsoft cuts 4,800 jobs, mostly in its Xbox gaming division, as 2026 tech layoffs pass 185,000.</li>
+      <li>Apple loses its EU General Court challenge to being classified a Digital Markets Act "gatekeeper."</li>
+      <li>Anthropic's extended free-plan access window for Claude Fable 5 closed July 12, reverting to standard usage limits.</li>
+      <li>Windows 11's July 14 update adds Point-in-time Restore and a faster File Explorer.</li>
+    </ul>
+  </div>
+  <section class="section theme-ai">
+    <div class="section-header">
+      <div class="section-icon">🤖</div>
+      <span class="section-title">AI &amp; LLM Updates</span>
+      <span class="section-count">3 stories</span>
+    </div>
+    <a class="story-card" href="https://www.digitalapplied.com/blog/anthropic-fable-5-access-extended-july-12-2026" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Digital Applied</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Anthropic's Claude Fable 5 free-access window closes</p>
+      <p class="story-summary">Anthropic's extended included access to Fable 5 on paid plans ended July 12, 2026 at 11:59:59 PM PT, after which usage reverts to standard limits. The extension capped a stretch in which Anthropic said it had overtaken OpenAI in business subscriptions.</p>
+    </a>
+    <a class="story-card" href="https://techstartups.com/2026/07/13/top-tech-news-today-july-13-2026-apple-anthropic-blackstone-meta-openai-samsung-sharefile-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">TechStartups</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">OpenAI's GPT-5.6 "Sol" reaches general availability</p>
+      <p class="story-summary">OpenAI's newest model family, GPT-5.6 "Sol," became generally available this week at $5/$30 per million input/output tokens. The rollout follows a period of government scrutiny over the company's prior release (unconfirmed).</p>
+    </a>
+    <a class="story-card" href="https://www.wbur.org/hereandnow/2026/07/07/ai-companies-safety" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">WBUR Here & Now</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Report: frontier AI labs quietly weakening safety pledges</p>
+      <p class="story-summary">The Future of Life Institute's latest AI Safety Index found Anthropic, OpenAI, Google DeepMind, and Meta have relaxed earlier safety commitments, with no company scoring above a C+. The finding adds pressure ahead of expected regulatory scrutiny (unconfirmed).</p>
+    </a>
+  </section>
+  <section class="section theme-tech">
+    <div class="section-header">
+      <div class="section-icon">📱</div>
+      <span class="section-title">Tech Industry News</span>
+      <span class="section-count">3 stories</span>
+    </div>
+    <a class="story-card" href="https://tech.yahoo.com/general/article/tech-layoffs-2026-more-than-160000-jobs-cut-at-oracle-meta-linkedin-bungie-and-more-companies-144545528.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Yahoo Tech</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Microsoft cuts 4,800 jobs, mostly in Xbox gaming</p>
+      <p class="story-summary">Microsoft began a new layoff round this week affecting roughly 4,800 employees, concentrated in its gaming division. The cuts are part of a broader 2026 wave that has eliminated more than 185,000 tech jobs industry-wide so far this year.</p>
+    </a>
+    <a class="story-card" href="https://tech.yahoo.com/general/article/tech-layoffs-2026-tracking-all-of-the-job-cuts-across-oracle-meta-microsoft-samsung-and-more-144545528.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Yahoo Tech</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Coinbase to lay off 700 employees, about 14% of staff</p>
+      <p class="story-summary">Coinbase CEO Brian Armstrong cited market conditions and AI-driven changes to how the company operates as reasons for the cuts. The layoffs continue a year in which AI adoption has repeatedly driven tech workforce reductions.</p>
+    </a>
+    <a class="story-card" href="https://techstartups.com/2026/07/13/top-tech-news-today-july-13-2026-apple-anthropic-blackstone-meta-openai-samsung-sharefile-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">TechStartups</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Apple loses EU gatekeeper challenge under Digital Markets Act</p>
+      <p class="story-summary">The EU General Court upheld the European Commission's classification of iOS and the App Store as "gatekeeper" services, rejecting Apple's legal challenge. The ruling strengthens the EU's ongoing push to regulate Big Tech platforms.</p>
+    </a>
+  </section>
+  <section class="section theme-sec">
+    <div class="section-header">
+      <div class="section-icon">🔐</div>
+      <span class="section-title">Cybersecurity</span>
+      <span class="section-count">2 stories</span>
+    </div>
+    <a class="story-card" href="https://byteiota.com/patch-tuesday-july-2026-cve-tracking/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">ByteIota</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Patch Tuesday fixes wormable CVSS 9.8 Windows flaw</p>
+      <p class="story-summary">July's Patch Tuesday ships 127 fixes, headlined by a fully wormable heap-based buffer overflow in Windows SPNEGO affecting every Windows machine since Server 2008. Admins are urged to prioritize patching domain controllers immediately.</p>
+    </a>
+    <a class="story-card" href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">CISA adds actively exploited SharePoint, ColdFusion flaws to KEV</p>
+      <p class="story-summary">CISA added CVE-2026-45659 (SharePoint RCE, CVSS 8.8) and a cluster including an Adobe ColdFusion flaw (CVSS 10.0) to its Known Exploited Vulnerabilities catalog due to active exploitation. Federal agencies face mandated patch deadlines under CISA directives.</p>
+    </a>
+  </section>
+  <section class="section theme-oss">
+    <div class="section-header">
+      <div class="section-icon">🔓</div>
+      <span class="section-title">Open Source</span>
+      <span class="section-count">2 stories</span>
+    </div>
+    <a class="story-card" href="https://releasebot.io/updates/github" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">CodeQL 2.26.0 adds AI prompt-injection detection</p>
+      <p class="story-summary">GitHub's CodeQL release adds Kotlin 2.4.0 support and new detection rules for AI prompt-injection vulnerabilities in JavaScript and TypeScript, plus analysis improvements for C#, Go, Python, Swift, and GitHub Actions (unconfirmed exact release date).</p>
+    </a>
+    <a class="story-card" href="https://releasebot.io/updates/github" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Git Project</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Git 2.55 released</p>
+      <p class="story-summary">The open-source Git project shipped version 2.55, continuing its regular release cadence (unconfirmed exact release date).</p>
+    </a>
+  </section>
+  <section class="section theme-dev">
+    <div class="section-header">
+      <div class="section-icon">🛠️</div>
+      <span class="section-title">Dev Tools &amp; Infra</span>
+      <span class="section-count">2 stories</span>
+    </div>
+    <a class="story-card" href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Windows Central</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Windows 11's July 14 update adds Point-in-time Restore</p>
+      <p class="story-summary">Microsoft's July 14 Windows 11 security update introduces Point-in-time Restore, which uses Volume Shadow Copy Service to roll back a system to a prior working state, plus faster File Explorer launch times.</p>
+    </a>
+    <a class="story-card" href="https://windowsforum.com/threads/dataverse-expands-coding-agent-plugin-to-claude-cursor-and-copilot-with-mcp-governance.435235/#post-997084" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Windows Forum</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Microsoft brings Dataverse coding-agent plugin to Claude, Cursor, Copilot</p>
+      <p class="story-summary">Microsoft expanded its Dataverse coding-agent plugin to Claude, Cursor, and GitHub Copilot with new MCP-based governance controls, letting developers pull live Dataverse data into their coding tools under admin-managed policies (unconfirmed exact date).</p>
+    </a>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · July 14, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+  </div>
+</footer>
+</body>
+</html>
