@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — August 11, 2026</title>
-  <meta property="og:title" content="Daily Tech & AI Recap — August 11, 2026" />
-  <meta property="og:description" content="Meta's open-weight Muse Glimmer, Claude Code's new Auto Mode default, critical prompt-injection flaws in AI coding agents, Intel's $15B AI stock sale, and a new China-linked ransomware strain." />
+  <title>Daily Tech Recap — August 12, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — August 12, 2026" />
+  <meta property="og:description" content="Nvidia's $500B AI financing alliance, DeepMind's leadership shakeup, OpenAI's GPT-5.6-Cyber, a record Patch Tuesday, and a first-of-its-kind OT attack in Poland." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">August 11, 2026</span>
+      <span class="date-badge">August 12, 2026</span>
     </div>
     <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
@@ -111,11 +111,11 @@
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>Meta releases Muse Glimmer, a 30B open-weight AI agent that runs on a single consumer GPU.</li>
-      <li>Anthropic will make Claude Code's Auto Mode the default from Aug 14, saying it catches harmful actions better than manual review.</li>
-      <li>Researchers disclose "Comment and Control" — critical prompt-injection flaws (one CVSS 10.0) in Claude Code, Gemini CLI, and GitHub Copilot Agent; patches are out.</li>
-      <li>Intel launches a $15B stock offering, its first since going public in 1971, to fund AI chip and foundry expansion.</li>
-      <li>China-linked Storm-1175 hits N-able N-central customers with new StormEncryptor ransomware.</li>
+      <li>Nvidia struck a $500B Wall Street alliance (Apollo, BlackRock, Blackstone, Goldman Sachs, KKR) to finance AI data center buildouts.</li>
+      <li>Google DeepMind reshuffled its leadership: Demis Hassabis moves to chairman, Jeff Dean departs after 27 years to start a new company.</li>
+      <li>OpenAI shipped GPT-5.6-Cyber, an "offense-grade" hacking model restricted to vetted security partners like CrowdStrike and IBM.</li>
+      <li>Microsoft's August Patch Tuesday fixed 421 CVEs, including one already exploited in the wild by North Korea's Lazarus Group.</li>
+      <li>Hackers breached a Polish power plant via a private cellular network — the first known real-world OT attack of its kind.</li>
     </ul>
   </div>
   <section class="section theme-ai">
@@ -124,42 +124,37 @@
       <span class="section-title">AI &amp; LLM Updates</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">MarkTechPost</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Meta releases Muse Glimmer, a 30B open-weight AI agent built for a single GPU</p>
-      <p class="story-summary">Meta Superintelligence Labs shipped Muse Glimmer, a 30-billion-parameter open-weight model that runs locally on a 24GB consumer GPU via 4-bit quantization. Released under Apache 2.0, Meta says it leads comparable open models like Gemma 4 and Qwen3.6 on agentic orchestration benchmarks.</p>
+    <a class="story-card" href="https://fortune.com/2026/08/10/deepmind-ceo-demis-hassabis-chairman-google-gemini-alphabet/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Fortune</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Google DeepMind reshuffles leadership as Hassabis steps back</p>
+      <p class="story-summary">Demis Hassabis moved to chairman and Alphabet chief scientist on Aug 8, handing day-to-day control of DeepMind to CTO Koray Kavukcuoglu, while longtime chief scientist Jeff Dean departed after 27 years to launch a startup called Discovery Loop. The shakeup comes as Google faces reports that Gemini 3.5 Pro is running months behind schedule.</p>
     </a>
-    <a class="story-card" href="https://theaiinsider.tech/2026/08/10/anthropic-sets-claude-codes-auto-mode-as-default-citing-improved-safety-over-manual-review/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">The AI Insider</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Anthropic sets Claude Code's Auto Mode as the default</p>
-      <p class="story-summary">Starting August 14, Auto Mode will be on by default for Pro, Max, and Team accounts, letting Claude Code proceed through tasks without step-by-step approval. Anthropic says internal testing found the mode outperforms manual review at catching harmful actions.</p>
+    <a class="story-card" href="https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">OpenAI ships GPT-5.6-Cyber, its first "offense-grade" hacking model</p>
+      <p class="story-summary">Built on GPT-5.6-Sol with a lowered refusal rate for dual-use security tasks, the model hit a 95% completion rate on exploit-chain and privilege-escalation prompts versus 1.5% for its base model. Access is restricted to vetted partners like CrowdStrike, Palo Alto Networks, and IBM through an expanded Daybreak Cyber Partner program.</p>
     </a>
-    <a class="story-card" href="https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">OpenAI completes $7B employee tender offer at $852B valuation</p>
-      <p class="story-summary">OpenAI wrapped a tender offer giving employees liquidity without discounting the company below its March fundraising valuation. The move suggests OpenAI is in no rush toward an IPO despite mounting compute and cash needs.</p>
+    <a class="story-card" href="https://fortune.com/2026/08/11/nvidia-500-billion-ai-financing/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Fortune</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Nvidia lines up $500B Wall Street alliance to bankroll AI data centers</p>
+      <p class="story-summary">Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to mobilize over $500 billion in third-party financing so customers can build data centers without draining their own cash. The non-binding framework treats AI compute like an asset class that can be borrowed against, similar to real estate or toll roads.</p>
     </a>
   </section>
   <section class="section theme-tech">
     <div class="section-header">
       <div class="section-icon">📱</div>
       <span class="section-title">Tech Industry News</span>
-      <span class="section-count">3 stories</span>
+      <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">CNBC</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Intel launches $15B stock sale to fund AI chip expansion</p>
-      <p class="story-summary">Intel is selling $15 billion of common stock, its first public share sale since listing in 1971, citing sustained AI-driven demand for foundry and packaging capacity. The company also raised its 2026 capex forecast to about $20 billion.</p>
+    <a class="story-card" href="https://newsroom.intel.com/corporate/intel-announces-upsize-and-pricing-of-20-billion-common-stock-offering" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Intel Newsroom</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Intel closes $20B stock offering as its AI-driven rally faces scrutiny</p>
+      <p class="story-summary">Intel priced 210.5 million shares at $95 each, upsizing the offering from $15B to $20B, with proceeds earmarked largely for Intel Foundry's chip manufacturing buildout; the sale is expected to close today. The deal drew over $100B in demand even as scrutiny grows over the stock's 164% year-to-date rally.</p>
     </a>
-    <a class="story-card" href="https://techcrunch.com/2026/08/09/techcrunch-mobility-zoox-prepares-for-launch-and-ubers-av-empire/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Amazon's Zoox starts charging for driverless robotaxi rides</p>
-      <p class="story-summary">Zoox began commercial fares in Las Vegas on August 10 after NHTSA granted the first exemption letting a purpose-built robotaxi with no steering wheel operate commercially. The exemption caps the fleet at 2,500 vehicles a year under added oversight.</p>
-    </a>
-    <a class="story-card" href="https://tech.yahoo.com/general/article/tech-layoffs-2026-tracker-all-of-the-job-cuts-so-far-across-oracle-meta-microsoft-samsung-and-more-144545528.html" target="_blank" rel="noopener">
+    <a class="story-card" href="https://tech.yahoo.com/general/article/tech-layoffs-2026-tracking-all-of-the-job-losses-across-tiktok-microsoft-meta-oracle-samsung-and-others-144545528.html" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">Yahoo Tech</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">2026 tech layoffs cross 200,000 workers as cuts continue</p>
-      <p class="story-summary">Trackers now show over 320 layoff events and more than 205,000 tech roles cut in 2026, with Oracle's 30,000-employee reduction the largest single event. AI-driven restructuring is cited in a growing share of the cuts. (unconfirmed)</p>
+      <p class="story-headline">Tech layoffs pass 175,000 in 2026 as AI-driven restructuring continues</p>
+      <p class="story-summary">Tech companies have made roughly 524 rounds of layoffs affecting 175,196 people so far in 2026 — about 786 people a day — with Oracle's 30,000-person cut the largest single event. Microsoft's latest round hit 4,800 roles, mostly in Xbox gaming, while Cisco is cutting nearly 4,000 jobs in Q4.</p>
     </a>
   </section>
   <section class="section theme-sec">
@@ -168,15 +163,15 @@
       <span class="section-title">Cybersecurity</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://www.securityweek.com/claude-code-gemini-cli-github-copilot-agents-vulnerable-to-prompt-injection-via-comments/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">SecurityWeek</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">'Comment and Control' flaws let GitHub comments hijack AI coding agents</p>
-      <p class="story-summary">Researchers disclosed a critical vulnerability class in Claude Code, Gemini CLI, and GitHub Copilot Agent where crafted PR titles or issue comments could trigger code execution and leak API keys from CI pipelines. Gemini CLI's flaw scored a perfect CVSS 10.0; both it and the Claude Code issue are now patched.</p>
+    <a class="story-card" href="https://www.theregister.com/security/2026/08/11/421-bugs-in-microsofts-patch-tuesday-release-and-the-norks-have-already-attacked-one/5286483" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">The Register</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Microsoft's August Patch Tuesday fixes 421 CVEs, one already exploited</p>
+      <p class="story-summary">CVE-2026-68820, a use-after-free flaw in the Windows AFD.sys WinSock driver, lets a local attacker escalate to SYSTEM privileges and has reportedly been exploited by North Korea's Lazarus Group since June. It's one of three related AFD.sys elevation-of-privilege bugs patched in this month's record-sized release.</p>
     </a>
-    <a class="story-card" href="https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html" target="_blank" rel="noopener">
+    <a class="story-card" href="https://thehackernews.com/2026/08/hackers-breach-polish-power-plant.html" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">China-linked Storm-1175 deploys new StormEncryptor ransomware</p>
-      <p class="story-summary">Microsoft says the threat actor, previously tied to Medusa ransomware, is using a new custom encryptor and likely gained initial access via the actively exploited N-able N-central flaw CVE-2026-18577. The bug was added to CISA's KEV catalog after in-the-wild exploitation.</p>
+      <p class="story-headline">Hackers breach Polish power plant via private cellular network</p>
+      <p class="story-summary">Attackers pivoted from a compromised wind farm through a private cellular APN into a combined heat and power plant's OT network, forcing Siemens PLCs into STOP mode and shutting down a steam turbine serving 50,000 residents. CERT Polska, which disclosed the December 2025 incident on Aug 8, called it the first known real-world attack using a private APN for lateral movement into an OT environment.</p>
     </a>
   </section>
   <section class="section theme-oss">
@@ -185,15 +180,15 @@
       <span class="section-title">Open Source</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://github.blog/changelog/2026-08-06-kimi-k3-is-now-available-in-github-copilot/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub Changelog</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">Kimi K3 reaches general availability in GitHub Copilot</p>
-      <p class="story-summary">The open-weight model is now GA across Copilot's Pro, Pro+, Business, and Enterprise tiers in VS Code, JetBrains, Xcode, and the CLI, priced at $3/$15 per million input/output tokens. Rollout had briefly paused after a GitHub Actions incident.</p>
+    <a class="story-card" href="https://releasebot.io/updates/openclaw" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">OpenClaw ships 2026.8.1-beta.1</p>
+      <p class="story-summary">The open-source AI agent framework — which surpassed React's decade-long GitHub star record in about 60 days — pushed a new beta release on Aug 11. (unconfirmed detailed changelog)</p>
     </a>
-    <a class="story-card" href="https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">MarkTechPost</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">Meta's Muse Glimmer ships fully open-weight under Apache 2.0</p>
-      <p class="story-summary">Meta released the 30B-parameter Muse Glimmer model with open weights on Hugging Face, aimed at developers running always-on local agents without a network dependency. It's positioned against other open models like Gemma 4 and Qwen3.6.</p>
+    <a class="story-card" href="https://www.linuxcompatible.org/story/new-linux-lts-stable-kernels-ship-61844-612103-and-66151" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">LinuxCompatible</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Three new Linux LTS stable kernels ship: 6.18.44, 6.12.103, 6.6.151</p>
+      <p class="story-summary">The point releases bundle hundreds of targeted bug fixes and security patches across the block layer, networking stack, and major filesystems. No new features were introduced, keeping the updates safe for production rollout.</p>
     </a>
   </section>
   <section class="section theme-dev">
@@ -202,21 +197,21 @@
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://windowsforum.com/windows-news.4/github-copilot-kimi-k3-rollout-paused-after-actions-incident.441861/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Windows Forum</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">GitHub Copilot resumes Kimi K3 rollout after Actions incident</p>
-      <p class="story-summary">GitHub paused the open-weight Kimi K3 rollout in Copilot while mitigating an incident affecting GitHub Actions, then resumed distribution across supported plans. Business and Enterprise admins must still opt in before the model is enabled for their orgs.</p>
+    <a class="story-card" href="https://github.blog/changelog/2026-08-07-github-code-quality-no-longer-adds-copilot-as-a-reviewer/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Changelog</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">GitHub reverses auto-adding Copilot as a PR reviewer</p>
+      <p class="story-summary">Enabling GitHub Code Quality no longer creates a ruleset that automatically requests a Copilot review on every pull request, new push, or draft PR. GitHub reversed the July 20 default after developers said adding a reviewer should be their choice, and turned the settings off in repos that already had them enabled.</p>
     </a>
-    <a class="story-card" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Claude Code ships spend-limit warnings and workspace trust prompts</p>
-      <p class="story-summary">Anthropic's latest Claude Code updates add gateway spend-limit support for usage warnings, workspace trust prompts for "claude agents", and Remote Control improvements, alongside fixes to OAuth, session, and headless-session bugs.</p>
+    <a class="story-card" href="https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Changelog</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Copilot code review's Lite and Balanced effort levels reach GA</p>
+      <p class="story-summary">Teams can now match review depth to a pull request's complexity and risk, choosing Lite for straightforward changes or Balanced for deeper analysis from a higher-reasoning model. The tiers give teams more control over cost and review latency on routine versus high-risk changes.</p>
     </a>
   </section>
 </main>
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 11, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 12, 2026<br>Sources linked on each card · Stories from the last 24-48 hours</p>
   </div>
 </footer>
 </body>
