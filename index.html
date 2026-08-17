@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — August 14, 2026</title>
-  <meta property="og:title" content="Daily Tech & AI Recap — August 14, 2026" />
-  <meta property="og:description" content="Anthropic's $6B Decart talks, DeepSeek's V4-Pro launch, a wormable Windows DNS RCE, and more from today's tech & AI brief." />
+  <title>Daily Tech Recap — August 17, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — August 17, 2026" />
+  <meta property="og:description" content="Google kills Imagen 4 API endpoints, Anthropic Q2 revenue reportedly tops $11.5B, a JetBrains TeamCity RCE is under active exploitation, Xen 4.22 ships, and Claude Code patches OTel &amp; Bedrock bugs." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">August 14, 2026</span>
+      <span class="date-badge">August 17, 2026</span>
     </div>
     <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
@@ -111,11 +111,11 @@
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>Anthropic is in talks to acquire Israeli AI startup Decart for ~$6B — its largest deal yet.</li>
-      <li>DeepSeek launched V4-Pro, a 1.6T-parameter flagship model built for agentic coding tasks.</li>
-      <li>OpenAI previewed "Ultrafast" mode, running GPT-5.6 Sol up to 14x faster via Cerebras.</li>
-      <li>Microsoft's Patch Tuesday fixed 421 CVEs, including a wormable Windows DNS Server RCE — patch now.</li>
-      <li>Databricks closed a $5B round at a $190B valuation as enterprise AI demand keeps climbing.</li>
+      <li>Google shuts down the Imagen 4 API endpoints today, forcing developers onto its Gemini-native image model.</li>
+      <li>Anthropic's Q2 revenue reportedly tops $11.5B as IPO speculation builds (unconfirmed).</li>
+      <li>CISA flags a critical JetBrains TeamCity RCE (CVE-2026-63077) as under active exploitation — patch now.</li>
+      <li>The Xen Project ships Xen 4.22 with AMD Zen 5 and RISC-V virtualization support.</li>
+      <li>Claude Code ships fixes for OpenTelemetry exports, the Bedrock setup wizard, and web search reliability.</li>
     </ul>
   </div>
   <section class="section theme-ai">
@@ -124,20 +124,20 @@
       <span class="section-title">AI &amp; LLM Updates</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Fortune</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Anthropic in talks to buy AI startup Decart for $6 billion</p>
-      <p class="story-summary">Anthropic is negotiating to acquire Israeli startup Decart, which builds GPU-efficiency and real-time generative video tech, in what would be its largest acquisition yet. Talks are early-stage and could still fall through, but the deal signals a push to cut inference costs as Claude demand surges.</p>
+    <a class="story-card" href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Google AI for Developers</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Google shuts down Imagen 4 API endpoints today</p>
+      <p class="story-summary">Google is deprecating the Imagen 4 standard, fast, and ultra endpoints on the Gemini API as of August 17, 2026, redirecting image-generation calls to its Gemini-native model. Apps still calling the old imagen-4.0 endpoints will start hitting hard errors rather than warnings.</p>
     </a>
-    <a class="story-card" href="https://qz.com/deepseek-v4-pro-official-launch-081326" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Quartz</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">DeepSeek ships V4-Pro as its new flagship model</p>
-      <p class="story-summary">DeepSeek officially launched V4-Pro, a 1.6-trillion-parameter model with a 1M-token context window built for stronger agentic tool use and coding tasks. The company says it plans to raise API prices soon as it expands compute and headcount to compete with faster-moving rivals.</p>
+    <a class="story-card" href="https://www.bloomberg.com/technology" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Bloomberg</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Anthropic's Q2 revenue reportedly surges past $11.5B</p>
+      <p class="story-summary">Bloomberg reports Anthropic's revenue grew sharply in Q2 2026, fueling speculation around a widely expected IPO alongside OpenAI's. All seven Anthropic cofounders have pledged to give away roughly 80% of their wealth at the company's ~$380B valuation (unconfirmed).</p>
     </a>
-    <a class="story-card" href="https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">OpenAI previews "Ultrafast" mode running GPT-5.6 Sol 14x faster</p>
-      <p class="story-summary">OpenAI is testing a new API tier, powered by Cerebras, that generates up to 750 tokens per second for latency-sensitive uses like incident response and voice apps. Early testers include Jane Street, Podium, and Rogo, with wider access planned as capacity grows.</p>
+    <a class="story-card" href="https://deepmind.google/blog/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Google DeepMind</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Gemini 3.7 Flash lands as DeepMind's newest fast model</p>
+      <p class="story-summary">Google DeepMind released Gemini 3.7 Flash this week, its latest lightweight model aimed at low-latency workloads. The release lands amid a broader leadership shift at DeepMind as it works to close the gap with Anthropic and OpenAI.</p>
     </a>
   </section>
   <section class="section theme-tech">
@@ -146,20 +146,20 @@
       <span class="section-title">Tech Industry News</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://www.cnbc.com/2026/08/13/databricks-funding-round-190-billion-valuation.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">CNBC</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Databricks closes $5B round at $190B valuation</p>
-      <p class="story-summary">Databricks raised $5 billion to fund enterprise AI investments after crossing a $7 billion revenue run rate, growing over 80% year-over-year. The raise underscores continued investor appetite for AI infrastructure players.</p>
+    <a class="story-card" href="https://tech.yahoo.com/general/article/tech-layoffs-2026-tracking-all-of-the-job-losses-across-tiktok-microsoft-meta-oracle-samsung-zillow-and-others-144545528.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Yahoo Tech</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">2026 tech layoffs pass 205,000 workers as of this week</p>
+      <p class="story-summary">Trackers now count 322 layoff events across the tech industry in 2026, totaling roughly 205,832 workers affected as of August 16 — an average of about 900 jobs cut per day. Oracle's 30,000-person cut remains the single largest event of the year.</p>
     </a>
-    <a class="story-card" href="https://www.cio.com/article/4197497/deepmind-ceo-again-pushes-for-a-frontier-ai-standards-body.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">CIO</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">DeepMind's Hassabis pitches a "FINRA for AI" safety body to Washington</p>
-      <p class="story-summary">Demis Hassabis met with Treasury Secretary Scott Bessent and White House tech adviser Michael Kratsios to pitch an industry-backed AI safety standards body modeled on financial regulator FINRA. It's the clearest sign yet the proposal has moved from talking point to active policy negotiation.</p>
+    <a class="story-card" href="https://news.crunchbase.com/startups/tech-layoffs/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Crunchbase News</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Intuit to cut about 3,000 jobs, roughly 17% of staff</p>
+      <p class="story-summary">Intuit is planning layoffs of around 3,000 employees as CEO Sasan Goodarzi frames the move as part of infusing AI more deeply across the company's products. It's one of several large workforce reductions tied to AI-driven restructuring this year.</p>
     </a>
-    <a class="story-card" href="https://openai.com/index/dali-rajic-chief-revenue-officer/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">OpenAI</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">OpenAI names Dali Rajic as Chief Revenue Officer</p>
-      <p class="story-summary">Rajic, previously President and COO at Wiz, succeeds Denise Dresser as OpenAI's second revenue chief in under a year. The hire is part of a push to turn OpenAI's product growth into more disciplined enterprise revenue.</p>
+    <a class="story-card" href="https://news.crunchbase.com/startups/tech-layoffs/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Crunchbase News</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Meta's 10% workforce cut moves forward, ~8,000 roles affected</p>
+      <p class="story-summary">Meta has begun executing cuts to about 10% of its workforce, roughly 8,000 employees, while also closing 6,000 open roles to redirect budget toward AI spending. Exact timing of the cuts relative to today is unconfirmed.</p>
     </a>
   </section>
   <section class="section theme-sec">
@@ -168,15 +168,15 @@
       <span class="section-title">Cybersecurity</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://www.securityweek.com/august-2026-patch-tuesday-microsoft-fixes-421-cves-one-exploited-zero-day/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">SecurityWeek</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Microsoft's August Patch Tuesday fixes 421 CVEs, including an actively exploited zero-day</p>
-      <p class="story-summary">The batch includes a WinSock elevation-of-privilege flaw already being exploited in the wild and a critical, wormable Windows DNS Server RCE (CVSS 9.8) that mainly threatens domain controllers. Admins are urged to prioritize the DNS patch on internet-facing servers immediately.</p>
-    </a>
-    <a class="story-card" href="https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html" target="_blank" rel="noopener">
+    <a class="story-card" href="https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Cisco ASA/FTD flaw exploited in the wild, added to CISA's KEV catalog</p>
-      <p class="story-summary">CVE-2026-20349 lets an unauthenticated attacker crash ASA and FTD firewalls via a crafted HTTP request to the SSL VPN service, killing active VPN sessions. CISA gave federal agencies until August 14 to patch after confirming active exploitation.</p>
+      <p class="story-headline">CISA flags critical JetBrains TeamCity RCE under active attack</p>
+      <p class="story-summary">CISA has flagged CVE-2026-63077, a critical deserialization flaw in JetBrains TeamCity (CVSS 9.8), as under active exploitation in the wild. The bug lets unauthenticated attackers bypass authentication and run arbitrary OS commands, so unpatched instances should be updated immediately.</p>
+    </a>
+    <a class="story-card" href="https://www.rapid7.com/blog/post/etr-cve-2026-18577-n-able-n-central-authentication-bypass-exploited-in-the-wild/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Rapid7</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">N-able N-central authentication bypass exploited since Aug 1</p>
+      <p class="story-summary">Rapid7 reports CVE-2026-18577, an authentication bypass in N-able N-central stemming from an incomplete earlier fix, has been exploited in the wild since August 1, 2026. Successful exploitation gives a remote unauthenticated attacker administrative control of vulnerable servers.</p>
     </a>
   </section>
   <section class="section theme-oss">
@@ -185,15 +185,15 @@
       <span class="section-title">Open Source</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://www.postgresql.org/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">PostgreSQL</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">PostgreSQL ships a coordinated patch release across six versions</p>
-      <p class="story-summary">PostgreSQL released 18.6, 17.11, 16.15, 15.19, 14.24, plus a 19 Beta 3 build in one coordinated update. As always, users are urged to apply the update to their supported major version promptly.</p>
+    <a class="story-card" href="https://www.linuxfoundation.org/press/xen-project-releases-xen-4.22-strengthening-open-source-virtualization-for-cloud-embedded-and-automotive-systems-1" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Linux Foundation</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Xen Project ships Xen 4.22 with AMD Zen 5 and RISC-V support</p>
+      <p class="story-summary">The Xen Project released Xen 4.22, its latest open-source type-1 hypervisor, adding AMD Zen 5 hardware support, Arm guest suspend/resume power management, and RISC-V SSTC timing extensions. The release also adds functional-safety testing aimed at automotive and embedded deployments.</p>
     </a>
-    <a class="story-card" href="https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">"Natively," an open-source AI meeting assistant, trends on GitHub</p>
-      <p class="story-summary">Natively is a free, privacy-first alternative to Cluely and Otter that runs real-time meeting transcription and note-taking locally, supporting both local models and bring-your-own-key cloud providers. It's gained traction as a self-hosted option that keeps transcripts off third-party servers.</p>
+    <a class="story-card" href="https://releasebot.io/updates/openclaw" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">OpenClaw surges past 210,000 GitHub stars</p>
+      <p class="story-summary">OpenClaw, a self-hosted personal AI assistant that connects local models to over 50 integrations including WhatsApp, Telegram, and Slack, has become one of the fastest-growing open-source projects in GitHub history. It has surpassed 210,000 stars in 2026.</p>
     </a>
   </section>
   <section class="section theme-dev">
@@ -202,21 +202,21 @@
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.231" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Claude Code 2.1.231 fixes MCP OAuth sign-in for Slack and other clients</p>
-      <p class="story-summary">The release resolves a redirect URI mismatch that was blocking MCP OAuth sign-in to pre-registered services like Slack. It follows a run of rapid fix releases this week covering remote-control session resumption and plugin marketplace command sources.</p>
+    <a class="story-card" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Claude Code patches OTel exports, Bedrock setup, and web search</p>
+      <p class="story-summary">Recent Claude Code updates fix OpenTelemetry HTTP exports being rejected by endpoints like Azure Monitor, and a bug where image-heavy conversations incorrectly failed with "Request too large" errors. The release also fixes the Bedrock setup wizard for assume-role profiles and adds retry/backoff for flaky web search and web fetch calls.</p>
     </a>
-    <a class="story-card" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Claude Code Changelog</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Claude Code's remote-control session resumption gets more reliable</p>
-      <p class="story-summary">Versions 2.1.227–229 fixed remote-control sessions leaking a resumed conversation's title and history into the wrong session, and improved reconnection after a device restart. The changes make it safer to pick up a long-running session from a phone or browser.</p>
+    <a class="story-card" href="https://releasebot.io/updates/github" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">GitHub Copilot improves MCP execution and terminal reliability</p>
+      <p class="story-summary">A recent GitHub Copilot release improves reliability for MCP tool execution and approvals, terminal output handling, and diff-based editing across cloud agent surfaces. The update also fixes ANSI escape rendering and makes terminal scrollbar behavior more predictable.</p>
     </a>
   </section>
 </main>
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 14, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 17, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
   </div>
 </footer>
 </body>
