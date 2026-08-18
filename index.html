@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — August 17, 2026</title>
-  <meta property="og:title" content="Daily Tech & AI Recap — August 17, 2026" />
-  <meta property="og:description" content="Google kills Imagen 4 API endpoints, Anthropic Q2 revenue reportedly tops $11.5B, a JetBrains TeamCity RCE is under active exploitation, Xen 4.22 ships, and Claude Code patches OTel &amp; Bedrock bugs." />
+  <title>Daily Tech Recap — August 18, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — August 18, 2026" />
+  <meta property="og:description" content="Stripe buys OpenRouter for $7B+, Microsoft patches 421 CVEs incl. an exploited zero-day, Oracle plans fresh layoffs, and Cursor ships Side Chats." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
+  <meta property="og:url" content="https://AliYahF0uFI.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">August 17, 2026</span>
+      <span class="date-badge">August 18, 2026</span>
     </div>
     <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
@@ -111,11 +111,11 @@
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>Google shuts down the Imagen 4 API endpoints today, forcing developers onto its Gemini-native image model.</li>
-      <li>Anthropic's Q2 revenue reportedly tops $11.5B as IPO speculation builds (unconfirmed).</li>
-      <li>CISA flags a critical JetBrains TeamCity RCE (CVE-2026-63077) as under active exploitation — patch now.</li>
-      <li>The Xen Project ships Xen 4.22 with AMD Zen 5 and RISC-V virtualization support.</li>
-      <li>Claude Code ships fixes for OpenTelemetry exports, the Bedrock setup wizard, and web search reliability.</li>
+      <li>Stripe finalizes a $7B+ acquisition of AI model router OpenRouter, a 5x markup on its $1.3B Series B from just months ago.</li>
+      <li>Microsoft's August Patch Tuesday fixes 421 CVEs, including a Windows kernel zero-day already being exploited to gain SYSTEM privileges.</li>
+      <li>Oracle is preparing another round of layoffs this month as it borrows heavily to fund its AI data-center buildout.</li>
+      <li>AI video startup Higgsfield raises $400M at a $5.4B valuation, with annualized revenue reportedly up 35x in a year.</li>
+      <li>Cursor ships v3.11 with Side Chats and Cloud Agent Hooks as competition with GitHub Copilot and Claude Code heats up.</li>
     </ul>
   </div>
   <section class="section theme-ai">
@@ -124,20 +124,20 @@
       <span class="section-title">AI &amp; LLM Updates</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Google AI for Developers</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Google shuts down Imagen 4 API endpoints today</p>
-      <p class="story-summary">Google is deprecating the Imagen 4 standard, fast, and ultra endpoints on the Gemini API as of August 17, 2026, redirecting image-generation calls to its Gemini-native model. Apps still calling the old imagen-4.0 endpoints will start hitting hard errors rather than warnings.</p>
+    <a class="story-card" href="https://techstartups.com/2026/08/17/top-tech-news-today-august-17-2026-ge-microsoft-nvidia-open-stripe-unitree-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Tech Startups</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Stripe finalizes $7B+ acquisition of AI router OpenRouter</p>
+      <p class="story-summary">Stripe has closed a deal to acquire OpenRouter, which routes requests across 400+ models from OpenAI, Anthropic, Google, Meta and others for roughly 8 million developers. The price marks more than a 5x markup on OpenRouter's $1.3B Series B valuation from May 2026.</p>
     </a>
-    <a class="story-card" href="https://www.bloomberg.com/technology" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Bloomberg</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Anthropic's Q2 revenue reportedly surges past $11.5B</p>
-      <p class="story-summary">Bloomberg reports Anthropic's revenue grew sharply in Q2 2026, fueling speculation around a widely expected IPO alongside OpenAI's. All seven Anthropic cofounders have pledged to give away roughly 80% of their wealth at the company's ~$380B valuation (unconfirmed).</p>
+    <a class="story-card" href="https://techstartups.com/2026/08/17/top-tech-news-today-august-17-2026-ge-microsoft-nvidia-open-stripe-unitree-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Tech Startups</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Nvidia reportedly lining up ~$100B in OpenAI financing (unconfirmed)</p>
+      <p class="story-summary">Nvidia is said to be preparing to back roughly $100 billion in financing for OpenAI as AI infrastructure spending accelerates. If confirmed, it would deepen the trend of chipmakers financing their own largest customers. (unconfirmed)</p>
     </a>
-    <a class="story-card" href="https://deepmind.google/blog/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Google DeepMind</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Gemini 3.7 Flash lands as DeepMind's newest fast model</p>
-      <p class="story-summary">Google DeepMind released Gemini 3.7 Flash this week, its latest lightweight model aimed at low-latency workloads. The release lands amid a broader leadership shift at DeepMind as it works to close the gap with Anthropic and OpenAI.</p>
+    <a class="story-card" href="https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-apple-anthropic-deepseek-google-ibm-pony-ai-openai-spacex-uber-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Tech Startups</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">IBM and OpenAI announce broad enterprise partnership (unconfirmed)</p>
+      <p class="story-summary">IBM and OpenAI unveiled a strategic partnership to deploy OpenAI models across enterprise workflows, application modernization, software development and cybersecurity tooling. Exact terms and rollout timeline were not detailed. (unconfirmed)</p>
     </a>
   </section>
   <section class="section theme-tech">
@@ -146,20 +146,20 @@
       <span class="section-title">Tech Industry News</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://tech.yahoo.com/general/article/tech-layoffs-2026-tracking-all-of-the-job-losses-across-tiktok-microsoft-meta-oracle-samsung-zillow-and-others-144545528.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Yahoo Tech</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">2026 tech layoffs pass 205,000 workers as of this week</p>
-      <p class="story-summary">Trackers now count 322 layoff events across the tech industry in 2026, totaling roughly 205,832 workers affected as of August 16 — an average of about 900 jobs cut per day. Oracle's 30,000-person cut remains the single largest event of the year.</p>
+    <a class="story-card" href="https://techstartups.com/2026/08/17/top-tech-news-today-august-17-2026-ge-microsoft-nvidia-open-stripe-unitree-more/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Tech Startups</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">AI video startup Higgsfield raises $400M at $5.4B valuation</p>
+      <p class="story-summary">Higgsfield, a two-year-old AI video generation startup founded by a former Snap executive, raised $400M with backing from Goldman Sachs, Intel, DST Global and Liberty Global. Annualized revenue reportedly grew from about $20M a year ago to $700M today.</p>
     </a>
-    <a class="story-card" href="https://news.crunchbase.com/startups/tech-layoffs/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Crunchbase News</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Intuit to cut about 3,000 jobs, roughly 17% of staff</p>
-      <p class="story-summary">Intuit is planning layoffs of around 3,000 employees as CEO Sasan Goodarzi frames the move as part of infusing AI more deeply across the company's products. It's one of several large workforce reductions tied to AI-driven restructuring this year.</p>
+    <a class="story-card" href="https://finance.yahoo.com/technology/ai/articles/oracle-planning-round-layoffs-august-134527039.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Yahoo Finance</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Oracle plans new layoffs as it borrows to fund AI data centers</p>
+      <p class="story-summary">Oracle is asking managers to identify staff for a new round of cuts ahead of its fiscal Q2 start on September 1. The company has been taking on tens of billions in debt to fund its AI data-center expansion.</p>
     </a>
-    <a class="story-card" href="https://news.crunchbase.com/startups/tech-layoffs/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Crunchbase News</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Meta's 10% workforce cut moves forward, ~8,000 roles affected</p>
-      <p class="story-summary">Meta has begun executing cuts to about 10% of its workforce, roughly 8,000 employees, while also closing 6,000 open roles to redirect budget toward AI spending. Exact timing of the cuts relative to today is unconfirmed.</p>
+    <a class="story-card" href="https://skillsyncer.com/layoffs-tracker" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">SkillSyncer Tracker</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">2026 tech layoffs pass 205,000 workers across 322 events (unconfirmed)</p>
+      <p class="story-summary">A running industry tracker puts 2026 tech layoffs at 322 events and roughly 205,832 workers affected so far, averaging about 895 job losses a day. AI adoption in coding, support and content roles is cited as a major driver. (unconfirmed)</p>
     </a>
   </section>
   <section class="section theme-sec">
@@ -168,32 +168,32 @@
       <span class="section-title">Cybersecurity</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">CISA flags critical JetBrains TeamCity RCE under active attack</p>
-      <p class="story-summary">CISA has flagged CVE-2026-63077, a critical deserialization flaw in JetBrains TeamCity (CVSS 9.8), as under active exploitation in the wild. The bug lets unauthenticated attackers bypass authentication and run arbitrary OS commands, so unpatched instances should be updated immediately.</p>
+    <a class="story-card" href="https://www.securityweek.com/august-2026-patch-tuesday-microsoft-fixes-421-cves-one-exploited-zero-day/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">SecurityWeek</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Microsoft's August Patch Tuesday fixes 421 CVEs, one exploited zero-day</p>
+      <p class="story-summary">Microsoft's August 2026 Patch Tuesday addresses 421 CVEs, including CVE-2026-68820, a use-after-free flaw in afd.sys that attackers are already exploiting in the wild to gain SYSTEM-level privileges.</p>
     </a>
-    <a class="story-card" href="https://www.rapid7.com/blog/post/etr-cve-2026-18577-n-able-n-central-authentication-bypass-exploited-in-the-wild/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Rapid7</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">N-able N-central authentication bypass exploited since Aug 1</p>
-      <p class="story-summary">Rapid7 reports CVE-2026-18577, an authentication bypass in N-able N-central stemming from an incomplete earlier fix, has been exploited in the wild since August 1, 2026. Successful exploitation gives a remote unauthenticated attacker administrative control of vulnerable servers.</p>
+    <a class="story-card" href="https://securityaffairs.com/197048/security/microsoft-patch-tuesday-for-august-2026-fixed-a-zero-day-and-wormable-rce.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Security Affairs</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Critical, potentially wormable Windows DNS Server flaw patched</p>
+      <p class="story-summary">CVE-2026-62878 is a stack-based buffer overflow in Windows DNS Server that lets remote, unauthenticated attackers execute code with elevated privileges without user interaction. Researchers warn the flaw could be wormable.</p>
     </a>
   </section>
   <section class="section theme-oss">
     <div class="section-header">
       <div class="section-icon">🔓</div>
       <span class="section-title">Open Source</span>
-      <span class="section-count">2 stories</span>
+      <span class="section-count">1 story</span>
     </div>
-    <a class="story-card" href="https://www.linuxfoundation.org/press/xen-project-releases-xen-4.22-strengthening-open-source-virtualization-for-cloud-embedded-and-automotive-systems-1" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Linux Foundation</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">Xen Project ships Xen 4.22 with AMD Zen 5 and RISC-V support</p>
-      <p class="story-summary">The Xen Project released Xen 4.22, its latest open-source type-1 hypervisor, adding AMD Zen 5 hardware support, Arm guest suspend/resume power management, and RISC-V SSTC timing extensions. The release also adds functional-safety testing aimed at automotive and embedded deployments.</p>
+    <a class="story-card" href="https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Blog</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">GitHub: AI-related repos up 178% year-over-year (unconfirmed)</p>
+      <p class="story-summary">GitHub's Octoverse data shows AI-related repositories growing 178% year-over-year, with more than 4.3 million LLM-focused projects now on the platform. No single flagship release stood out in the last 24 hours. (unconfirmed)</p>
     </a>
-    <a class="story-card" href="https://releasebot.io/updates/openclaw" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">OpenClaw surges past 210,000 GitHub stars</p>
-      <p class="story-summary">OpenClaw, a self-hosted personal AI assistant that connects local models to over 50 integrations including WhatsApp, Telegram, and Slack, has become one of the fastest-growing open-source projects in GitHub history. It has surpassed 210,000 stars in 2026.</p>
+    <a class="story-card" href="#" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">—</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">No major updates today</p>
+      <p class="story-summary">Check back tomorrow.</p>
     </a>
   </section>
   <section class="section theme-dev">
@@ -202,21 +202,21 @@
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Claude Code patches OTel exports, Bedrock setup, and web search</p>
-      <p class="story-summary">Recent Claude Code updates fix OpenTelemetry HTTP exports being rejected by endpoints like Azure Monitor, and a bug where image-heavy conversations incorrectly failed with "Request too large" errors. The release also fixes the Bedrock setup wizard for assume-role profiles and adds retry/backoff for flaky web search and web fetch calls.</p>
+    <a class="story-card" href="https://northflank.com/blog/agentic-coding-tools" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Northflank</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Cursor v3.11 ships Side Chats and Cloud Agent Hooks (unconfirmed)</p>
+      <p class="story-summary">Cursor's v3.11 release adds Side Chats for running parallel agent conversations, a Conversation Search feature, and Cloud Agent Hooks, as the AI coding-tool market keeps splitting between Copilot, Cursor and Claude Code. (unconfirmed)</p>
     </a>
-    <a class="story-card" href="https://releasebot.io/updates/github" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">GitHub Copilot improves MCP execution and terminal reliability</p>
-      <p class="story-summary">A recent GitHub Copilot release improves reliability for MCP tool execution and approvals, terminal output handling, and diff-based editing across cloud agent surfaces. The update also fixes ANSI escape rendering and makes terminal scrollbar behavior more predictable.</p>
+    <a class="story-card" href="https://windowsforum.com/threads/dataverse-expands-coding-agent-plugin-to-claude-cursor-and-copilot-with-mcp-governance.435235/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Windows Forum</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Microsoft Dataverse extends coding-agent plugin to Claude, Cursor, Copilot (unconfirmed)</p>
+      <p class="story-summary">Microsoft is expanding Dataverse's agent-data platform role by bringing its coding-agent plugin to Claude, Cursor and GitHub Copilot, along with broader MCP support, certification and governance across its AI stack. (unconfirmed)</p>
     </a>
   </section>
 </main>
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 17, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 18, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
   </div>
 </footer>
 </body>
