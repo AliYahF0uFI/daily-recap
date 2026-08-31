@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — August 27, 2026</title>
-  <meta property="og:title" content="Daily Tech & AI Recap — August 27, 2026" />
-  <meta property="og:description" content="Z.ai open-sources GLM-5.3-Flash, OpenAI's Jalapeño chip beats Nvidia Blackwell, Meta settles for $16.68B, and a critical Gitea RCE is under active attack." />
+  <title>Daily Tech Recap — August 31, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — August 31, 2026" />
+  <meta property="og:description" content="Anthropic battles session-hijacking malware and a music-industry lawsuit, OpenAI cuts Cursor off after its SpaceX buyout, and CISA flags a critical Gitea RCE under active attack." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">August 27, 2026</span>
+      <span class="date-badge">August 31, 2026</span>
     </div>
     <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
@@ -111,33 +111,33 @@
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>Z.ai open-sourced its 320B-parameter GLM-5.3-Flash model under an MIT license.</li>
-      <li>OpenAI says its first custom chip, Jalapeño, beats Nvidia's Blackwell on AI work per watt.</li>
-      <li>Meta agreed to pay up to $16.68B to settle a 29-state lawsuit over teen social media harms.</li>
-      <li>CISA is warning of active exploitation of a critical Gitea RCE flaw now in its KEV catalog.</li>
-      <li>Kubernetes v1.37 "Garhwal" and LibreOffice 26.8 both shipped major open-source releases.</li>
+      <li>Anthropic is signing users out of Claude and refunding charges after infostealer malware hijacked login sessions to drain usage.</li>
+      <li>Sony Music and Warner Chappell sued Anthropic, alleging a "brazen campaign" of scraping copyrighted songs to train Claude.</li>
+      <li>OpenAI will cut off Cursor's model access on November 12 after Elon Musk's SpaceX completed its $60B acquisition of the coding startup.</li>
+      <li>McKesson disclosed a breach after the ShinyHunters extortion group claimed it stole 284 million patient records.</li>
+      <li>CISA confirmed active exploitation of a critical Gitea RCE flaw (CVSS 9.8) and ordered federal agencies to patch it immediately.</li>
     </ul>
   </div>
   <section class="section theme-ai">
     <div class="section-header">
       <div class="section-icon">🤖</div>
       <span class="section-title">AI &amp; LLM Updates</span>
-      <span class="section-count">2 stories</span>
+      <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://siliconangle.com/2026/08/26/z-ai-open-sources-ox-alpha-model-as-glm-5-3-flash/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">SiliconANGLE</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Z.ai open-sources GLM-5.3-Flash under an MIT license</p>
-      <p class="story-summary">Z.ai revealed that its mystery "Ox Alpha" model is actually GLM-5.3-Flash, a 320B-parameter mixture-of-experts model released under an MIT license. It benchmarks competitively against Claude and GPT-class models while costing a fraction to run.</p>
+    <a class="story-card" href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">BleepingComputer</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Anthropic warns infostealer malware is hijacking Claude sessions</p>
+      <p class="story-summary">Anthropic is signing out affected users, wiping saved payment methods, and refunding unauthorized charges after malware including Vidar, LummaC2, and RedLine stole active Claude login sessions from infected PCs. The company says signing out stops the stolen session but doesn't remove the malware itself.</p>
     </a>
-    <a class="story-card" href="https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">CNBC</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">OpenAI's first custom chip, Jalapeño, claims an edge over Nvidia Blackwell</p>
-      <p class="story-summary">OpenAI showed Hot Chips benchmarks claiming its first custom inference chip delivers up to 1.9x more AI work per watt than Nvidia's Blackwell systems. The chip, co-developed with Broadcom, targets low-volume production later this year.</p>
+    <a class="story-card" href="https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Sony Music and Warner Chappell sue Anthropic over Claude's training data</p>
+      <p class="story-summary">The publishers filed suit in the Northern District of California accusing Anthropic and co-founders Dario Amodei and Benjamin Mann of illegally torrenting and scraping tens of thousands of copyrighted songs to train Claude. They are seeking up to $150,000 per infringed work, with total damages potentially reaching billions.</p>
     </a>
-    <a class="story-card" href="#" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">—</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">No major updates today</p>
-      <p class="story-summary">Check back tomorrow.</p>
+    <a class="story-card" href="https://www.npr.org/2026/08/30/nx-s1-5876436/chatbots-search-propaganda" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">NPR</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">AI chatbots outperform search engines at resisting foreign propaganda</p>
+      <p class="story-summary">An NPR/NewsGuard test posed 30 questions built on false narratives pushed by Russia, China, and Iran to major chatbots and search engines; chatbots like ChatGPT and Gemini correctly debunked the claims far more often than AI summaries at the top of search results. The study points to a growing gap between conversational AI and search-based AI overviews on misinformation resistance.</p>
     </a>
   </section>
   <section class="section theme-tech">
@@ -146,20 +146,20 @@
       <span class="section-title">Tech Industry News</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://www.axios.com/2026/08/26/meta-lawsuit-settlement-states-facebook" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Axios</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Meta agrees to pay up to $16.68B over teen social media harms</p>
-      <p class="story-summary">Meta settled a 29-state lawsuit alleging it designed Facebook and Instagram to be addictive to teens, denying wrongdoing. The deal requires daily time caps, stronger age verification, and expanded parental controls.</p>
+    <a class="story-card" href="https://www.technology.org/2026/08/27/meta-project-ot-ai-layoffs-scrapped/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Technology.org</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Meta scraps "Project OT" plan to cut some teams by up to 60% via AI</p>
+      <p class="story-summary">Internal planning under Meta's AI-native restructuring program had explored cutting some teams by as much as 60% through layoffs and hiring freezes. Zuckerberg abandoned the second company-wide wave after Meta's AI coding tools failed to produce the expected productivity gains.</p>
     </a>
-    <a class="story-card" href="https://techstartups.com/2026/08/26/amazon-is-shutting-down-mechanical-turk-after-21-years-as-ai-reshapes-crowdsourced-work/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Tech Startups</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Amazon shuts down Mechanical Turk after 21 years</p>
-      <p class="story-summary">Amazon is closing its crowdsourced labor marketplace on September 30, ending a service Jeff Bezos once called "artificial artificial intelligence." The shutdown reflects how AI has displaced much of the human-labeling work the platform was built for.</p>
+    <a class="story-card" href="https://basic-tutorials.com/news/samsung-galaxy-s26-fe-officially-unveiled-price-release-date-and-specifications/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Basic Tutorials</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Samsung officially unveils Galaxy S26 FE, launching September 4</p>
+      <p class="story-summary">The Fan Edition phone ships with an Exynos 2500 chip, a 6.7-inch 120Hz display, and Galaxy AI features, starting at $699.99 in the US. Select carriers get it September 3, with wide availability the following day.</p>
     </a>
-    <a class="story-card" href="https://techcrunch.com/2026/08/25/spacex-will-build-a-second-100b-starbase-spaceport-in-louisiana/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">SpaceX unveils $100B second Starbase spaceport in Louisiana</p>
-      <p class="story-summary">SpaceX plans a 125,000-acre launch complex on Louisiana's coast meant to eventually support thousands of Starship flights a year. Construction is slated to begin in 2027, with the first launch targeted for 2029.</p>
+    <a class="story-card" href="https://www.datacenterdynamics.com/en/news/alibaba-brazil/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">DatacenterDynamics</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Alibaba Cloud launches its first Brazil cloud region</p>
+      <p class="story-summary">The new region comprises two data centers, giving Alibaba its first major cloud infrastructure footprint in South America. It offers local businesses, startups, and developers access to Alibaba's cloud and agentic AI services.</p>
     </a>
   </section>
   <section class="section theme-sec">
@@ -168,15 +168,15 @@
       <span class="section-title">Cybersecurity</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Critical Gitea RCE flaw actively exploited, added to CISA's KEV catalog</p>
-      <p class="story-summary">CVE-2026-60004 (CVSS 9.8) lets an attacker with ordinary repository write access run arbitrary shell commands, and it's already been used to drop cryptomining payloads. All Gitea instances from version 1.17 onward are affected; federal agencies must patch by August 28.</p>
-    </a>
-    <a class="story-card" href="https://www.bleepingcomputer.com/news/security/boston-scientific-says-cyberattack-disrupted-operations-globally/" target="_blank" rel="noopener">
+    <a class="story-card" href="https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft/" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">BleepingComputer</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Boston Scientific says cyberattack disrupted operations globally</p>
-      <p class="story-summary">The medical device maker confirmed an attack disrupted its IT systems worldwide. The company has not yet disclosed the attack type or the scope of any data affected (unconfirmed).</p>
+      <p class="story-headline">McKesson discloses breach after ShinyHunters claims patient data theft</p>
+      <p class="story-summary">The healthcare distribution giant disclosed unauthorized access to third-party applications after the ShinyHunters extortion group claimed it stole 284 million patient records. McKesson said it discovered the incident on August 25 and is investigating the scope of the exposure.</p>
+    </a>
+    <a class="story-card" href="https://www.securityweek.com/cisa-warns-of-exploited-gitea-vulnerability/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">SecurityWeek</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">CISA warns of actively exploited Gitea RCE flaw</p>
+      <p class="story-summary">CVE-2026-60004, rated 9.8 on the CVSS scale, lets an attacker with repository write access plant a malicious Git hook and run shell commands as the Gitea service account. CISA added it to its Known Exploited Vulnerabilities catalog and ordered federal agencies to remediate it immediately.</p>
     </a>
   </section>
   <section class="section theme-oss">
@@ -185,15 +185,15 @@
       <span class="section-title">Open Source</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Kubernetes Blog</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">Kubernetes v1.37 "Garhwal" released</p>
-      <p class="story-summary">The Kubernetes project shipped v1.37 with a fresh batch of stable, beta, and alpha features from its contributor community. The release lands on schedule as part of Kubernetes' regular quarterly cadence.</p>
+    <a class="story-card" href="https://linuxiac.com/dovecot-2-4-5-secure-imap-server-fixes-18-cves-adds-phrase-search/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Linuxiac</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Dovecot 2.4.5 fixes 18 CVEs, adds phrase search</p>
+      <p class="story-summary">The popular open-source IMAP/POP3 server's new release patches authentication bypass, email spoofing, information leak, and denial-of-service flaws. It also adds several new features, including phrase search support.</p>
     </a>
-    <a class="story-card" href="https://9to5linux.com/libreoffice-26-8-open-source-office-suite-officially-released-this-is-whats-new" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">9to5Linux</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">LibreOffice 26.8 released with new Writer text-layout engine</p>
-      <p class="story-summary">The Document Foundation's latest release adds a Paragraph Composer algorithm that balances word spacing across lines in Writer, plus better OpenType font-variation support. It continues LibreOffice's twice-yearly major update cycle.</p>
+    <a class="story-card" href="https://linuxiac.com/incus-7-4-adds-near-live-container-migration-for-zfs-and-btrfs/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Linuxiac</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Incus 7.4 adds near-live container migration for ZFS and Btrfs</p>
+      <p class="story-summary">The container and VM manager's latest release brings near-live migration for ZFS and Btrfs storage backends, expanded Secure Boot tooling, and networking improvements. It also ships two security fixes.</p>
     </a>
   </section>
   <section class="section theme-dev">
@@ -202,21 +202,21 @@
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Salesforce Newsroom</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Salesforce and Anthropic announce "Claudeforce" partnership</p>
-      <p class="story-summary">Salesforce and Anthropic expanded their partnership to embed Claude's reasoning and agentic actions directly into Salesforce's CRM products. The deal deepens Anthropic's enterprise distribution as it moves toward an expected IPO.</p>
+    <a class="story-card" href="https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">CNBC</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">OpenAI to cut Cursor's model access after $60B SpaceX acquisition</p>
+      <p class="story-summary">OpenAI notified SpaceX it will end its contract supplying models to Cursor on November 12, citing an inability to trust its technology will be used within contract terms given past violations by Musk-affiliated companies. SpaceX completed its $60 billion acquisition of the AI coding startup on August 14.</p>
     </a>
-    <a class="story-card" href="https://origami.sa/en/blog/claude-code-august-2026/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Origami.sa</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Claude Code ships a broad stability and usability update</p>
-      <p class="story-summary">The August update adds Bash allow-rule warnings, an Auto mode tab in /permissions, faster transcript and fullscreen rendering, and smarter background sessions, alongside fixes across plugins, MCP, and resume behavior (unconfirmed exact release date).</p>
+    <a class="story-card" href="https://www.notebookcheck.net/Anthropic-announces-a-25-increase-to-Claude-Code-limits-but-there-s-a-17-catch.1382735.0.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Notebookcheck</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Anthropic to raise Claude Code weekly limits 25% — but it's a net cut</p>
+      <p class="story-summary">Starting September 14, standard weekly limits in Claude Code permanently rise 25% over the original baseline for Pro, Max, Team, and Enterprise seat plans. Because a temporary 50% boost is currently in effect, most users will actually see limits drop about 17% from what they have today.</p>
     </a>
   </section>
 </main>
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 27, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · August 31, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
   </div>
 </footer>
 </body>
