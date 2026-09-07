@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — September 2, 2026</title>
-  <meta property="og:title" content="Daily Tech & AI Recap — September 2, 2026" />
-  <meta property="og:description" content="Pentagon's Anthropic blacklist ruled illegal, Apple's Ternus becomes CEO, an npm worm steals dev credentials, DeepSeek nears a $74B valuation, and OpenClaw sets a GitHub star record." />
+  <title>Daily Tech Recap — September 7, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — September 7, 2026" />
+  <meta property="og:description" content="Nvidia agrees to acquire Hugging Face for ~$12.9B, Claude formalizes Fermat's Last Theorem, and GPT-6 Astra lands in GitHub Copilot." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">September 2, 2026</span>
+      <span class="date-badge">September 7, 2026</span>
     </div>
     <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
@@ -111,11 +111,11 @@
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>A federal judge ruled the Pentagon's blacklisting of Anthropic illegal and retaliatory, though the Pentagon still plans to drop Claude by Sept. 30.</li>
-      <li>John Ternus officially became Apple's CEO on September 1, succeeding Tim Cook after a 15-year run.</li>
-      <li>A "Trinitite" worm hijacked a popular TanStack Query npm package, stealing GitHub, cloud, and CI/CD credentials from developers.</li>
-      <li>DeepSeek is closing a ~$7.4B funding round at a ~$74B valuation ahead of a planned 2027 IPO.</li>
-      <li>OpenClaw is now the fastest-growing open-source project in GitHub history, surpassing React and Linux with ~388K stars.</li>
+      <li>Nvidia agrees to acquire Hugging Face for ~$12.9B, pledging to keep it an open, vendor-neutral AI platform.</li>
+      <li>Anthropic says Claude autonomously produced the first fully computer-verified formalization of Fermat's Last Theorem.</li>
+      <li>OpenAI's GPT-6 Astra becomes the first model to cross OpenAI's "critical" cybersecurity risk threshold (unconfirmed AGI claims).</li>
+      <li>Roundcube ships emergency patches for 12 vulnerabilities, including a zero-click stored XSS bug.</li>
+      <li>GitHub Copilot makes GPT-6 Astra generally available for Pro+, Business, and Enterprise users.</li>
     </ul>
   </div>
   <section class="section theme-ai">
@@ -124,20 +124,20 @@
       <span class="section-title">AI &amp; LLM Updates</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://www.nbcnews.com/business/business-news/anthropic-pentagon-blacklist-claude-judge-rcna594825" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">NBC News</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Federal judge rules Pentagon's blacklisting of Anthropic was illegal</p>
-      <p class="story-summary">A U.S. district judge found the Department of Defense violated the First Amendment by labeling Anthropic a "supply chain risk" after it objected to unrestricted battlefield use of Claude. The Pentagon is expected to appeal and reportedly still plans to phase out Claude models by September 30.</p>
+    <a class="story-card" href="https://www.anthropic.com/research/formalizing-fermats-last-theorem" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Anthropic</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Claude formalizes Fermat's Last Theorem in Lean</p>
+      <p class="story-summary">Anthropic says Claude worked largely autonomously for 11 days to produce the first fully computer-verified formalization of Fermat's Last Theorem, generating roughly 13 million lines of Lean code across 29,500 intermediate theorems. It completes the final entry on Freek Wiedijk's list of 100 famous formalization challenges.</p>
     </a>
-    <a class="story-card" href="https://techstartups.com/2026/08/28/deepseek-nears-7-4-billion-funding-round-at-74-billion-valuation-ahead-of-2027-ipo/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Tech Startups</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">DeepSeek nears $7.4B funding round at ~$74B valuation ahead of 2027 IPO</p>
-      <p class="story-summary">The Chinese AI lab is reportedly closing its first external funding round, backed by investors including Tencent and CATL, at a valuation roughly 50% higher than earlier this year. The raise positions DeepSeek for a planned 2027 public listing.</p>
+    <a class="story-card" href="https://www.csoonline.com/article/4218679/openai-launches-gpt-6-astra-its-first-model-to-cross-a-critical-cybersecurity-threshold.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">CSO Online</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">GPT-6 Astra crosses OpenAI's "critical" cybersecurity threshold</p>
+      <p class="story-summary">OpenAI's newly launched GPT-6 Astra scored 100% on internal exploit-development benchmarks and found two previously unknown zero-days during testing, making it the first model to cross the company's "critical" risk threshold. President Greg Brockman told reporters it may mark the start of the "AGI era" (unconfirmed).</p>
     </a>
-    <a class="story-card" href="https://startupfortune.com/alibabas-qwen38-flash-next-gives-builders-an-early-look-at-qwen4/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Startup Fortune</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Alibaba previews Qwen4 architecture with open-weight Qwen3.8-Flash-Next</p>
-      <p class="story-summary">The mixture-of-experts model activates just 6B of its 125B parameters per token and serves as an early architectural preview of Qwen4, arriving days after Moonshot AI's 2.8-trillion-parameter Kimi K3 launch. The releases underline an intensifying race among Chinese labs for open-weight leadership.</p>
+    <a class="story-card" href="https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/5294049" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">The Register</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Google ships Gemini 3.8 Flash with a locked-down "Cyber" variant</p>
+      <p class="story-summary">Google released Gemini 3.8 Flash on September 2, its third Flash release in six weeks, priced the same as its predecessor while beating it on every published benchmark. A hardened "Cyber" sibling variant launched alongside it for security-sensitive deployments.</p>
     </a>
   </section>
   <section class="section theme-tech">
@@ -146,37 +146,42 @@
       <span class="section-title">Tech Industry News</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Apple Newsroom</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">John Ternus becomes Apple CEO, Tim Cook moves to executive chairman</p>
-      <p class="story-summary">The transition took effect September 1, 2026, ending Cook's 15-year run during which Apple's market cap grew from roughly $350B to $4.6T. Ternus, previously SVP of Hardware Engineering, led development of the iPhone, iPad, and Apple's Silicon transition.</p>
+    <a class="story-card" href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">NVIDIA Blog</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Nvidia agrees to acquire Hugging Face for ~$12.9B</p>
+      <p class="story-summary">Nvidia will acquire Hugging Face for roughly $12.93 billion, including up to $1 billion in retention equity for staff, in a deal expected to close in the first half of 2027 pending regulatory approval. Both companies say Hugging Face will remain an open, vendor-neutral platform that doesn't require Nvidia compute.</p>
     </a>
-    <a class="story-card" href="https://www.cnbc.com/2026/06/23/oracle-ai-job-cuts-layoffs-21000.html" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">CNBC</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Oracle's AI-driven restructuring cuts workforce by 21,000 over the past year</p>
-      <p class="story-summary">The database giant has shed roughly 13% of its headcount as it redirects billions toward AI data-center and Stargate infrastructure buildout. Further cuts were reportedly planned for August as Oracle works to offset a fiscal 2026 capex bill that surged to $55.7B.</p>
+    <a class="story-card" href="https://www.thestar.com.my/tech/tech-news/2026/09/05/india039s-tcs-unit-to-invest-up-to-74-billion-in-ai-data-center-campus" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">The Star</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">TCS unit to invest up to $7.4B in AI data center campus in India</p>
+      <p class="story-summary">TCS subsidiary HyperVault will invest up to $7.4 billion to build a 1-gigawatt AI data center campus on 264 acres in Hyderabad, aimed at hyperscalers needing high-density GPU capacity. It's one of the largest AI infrastructure bets announced in India to date.</p>
     </a>
-    <a class="story-card" href="https://fortune.com/2026/08/27/google-deepmind-losing-talent-to-rival-ai-labs-startups-new-data-show/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Fortune</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Google DeepMind loses chief scientist Jeff Dean amid AI talent exodus</p>
-      <p class="story-summary">Dean departed after 27 years alongside senior researchers Oriol Vinyals and Quoc Le, who left to launch a startup, as Demis Hassabis stepped back into an Alphabet chairman role. Anthropic and OpenAI are reportedly gaining ground in the talent war as compensation offers escalate.</p>
+    <a class="story-card" href="https://skillsyncer.com/layoffs-tracker" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Skillsyncer</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Tech layoffs pass 209,000 workers for 2026</p>
+      <p class="story-summary">Trackers now count 365 layoff events across the tech industry in 2026, affecting more than 209,000 workers, with Oracle's 30,000-person cut remaining the year's largest. Analysts cite AI adoption, macro pressure, and infrastructure spending shifts as the main drivers.</p>
     </a>
   </section>
   <section class="section theme-sec">
     <div class="section-header">
       <div class="section-icon">🔐</div>
       <span class="section-title">Cybersecurity</span>
-      <span class="section-count">2 stories</span>
+      <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://gbhackers.com/shai-hulud-trinitite-worm/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GBHackers</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">"Trinitite" worm compromises popular TanStack Query npm codegen package</p>
-      <p class="story-summary">Attackers published ten malicious versions of the openapi-react-query-codegen package (150K+ weekly downloads), deploying an obfuscated stealer that harvests GitHub, cloud, and CI/CD credentials and self-propagates across npm, PyPI, and RubyGems. Anyone who installed affected versions since August 28 should rotate all exposed credentials immediately.</p>
+    <a class="story-card" href="https://roundcube.net/news/2026/09/06/security-updates-1.6.19-and-1.7.4" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Roundcube</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Roundcube patches 12 vulnerabilities in emergency update</p>
+      <p class="story-summary">Roundcube shipped security releases 1.6.19 and 1.7.4 on September 6, fixing 12 vulnerabilities including a zero-click stored XSS bug, an SSRF bypass, and several email-header injection flaws. The project's lead maintainer urged all production installations to update immediately.</p>
     </a>
-    <a class="story-card" href="https://www.securityweek.com/august-2026-patch-tuesday-microsoft-fixes-421-cves-one-exploited-zero-day/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">SecurityWeek</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Microsoft's August Patch Tuesday fixes 421 CVEs, including an actively exploited zero-day</p>
-      <p class="story-summary">CVE-2026-68820, a privilege-escalation flaw in the Windows AFD.sys driver, was already being exploited by attackers before the patch shipped. 42 of the fixes carry Microsoft's "critical" severity rating.</p>
+    <a class="story-card" href="https://www.bleepingcomputer.com/news/security/dropbox-accounts-breached-through-lenovo-email-verification-flaw/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">BleepingComputer</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Dropbox breach via Lenovo ID flaw exposed ~5,000 accounts</p>
+      <p class="story-summary">Dropbox confirmed attackers exploited a flaw in Lenovo's federated login to register a Lenovo ID under a victim's email and sign in without ever touching their Dropbox password. Dropbox invalidated all Lenovo-linked sessions and now requires a Dropbox password even for federated sign-in.</p>
+    </a>
+    <a class="story-card" href="https://www.cisa.gov/news-events/alerts/2026/09/04/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">CISA</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">CISA adds actively exploited Chrome zero-day to KEV catalog</p>
+      <p class="story-summary">CISA added CVE-2026-85046, a Chromium V8 type-confusion bug, to its Known Exploited Vulnerabilities catalog on September 4 after confirming active exploitation in the wild. It was one of ten actively exploited flaws CISA flagged during the final week of August.</p>
     </a>
   </section>
   <section class="section theme-oss">
@@ -185,15 +190,15 @@
       <span class="section-title">Open Source</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub Blog</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">OpenClaw becomes the fastest-growing open-source project in GitHub history</p>
-      <p class="story-summary">The personal AI-assistant project, started as a weekend build in November 2025, has climbed to roughly 388,000 stars, surpassing React and Linux. GitHub's own maintainer team has published a look at how the project is being secured amid its viral growth.</p>
+    <a class="story-card" href="https://github.com/tauricresearch/tradingagents" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">TradingAgents becomes GitHub's top open-source AI trading framework</p>
+      <p class="story-summary">TauricResearch's TradingAgents, a multi-agent LLM framework that mirrors real trading-firm workflows, climbed from about 9,300 stars in March to over 99,000 by late August, overtaking ai-hedge-fund as the most-starred open-source AI trading project. It remains one of GitHub's fastest-growing agent frameworks this month.</p>
     </a>
-    <a class="story-card" href="https://news.tuxmachines.org/n/2026/08/26/LibreOffice_26_8_Open_Source_Office_Suite_Officially_Released_T.shtml" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Tux Machines</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">LibreOffice 26.8 ships with major typography and file-compatibility improvements</p>
-      <p class="story-summary">The release consolidates work from 206 contributors (155 of them volunteers), focused on typographic quality, broader writing-system support, and better fidelity when exchanging documents with other office suites.</p>
+    <a class="story-card" href="https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Natively crosses 2.4k stars as a local-only AI meeting assistant</p>
+      <p class="story-summary">Natively, a free and open-source AI meeting assistant and interview copilot that runs entirely locally with no telemetry, passed 2.4k GitHub stars after a September update. It positions itself as a privacy-first alternative to closed tools like Cluely, Otter, and Fireflies.</p>
     </a>
   </section>
   <section class="section theme-dev">
@@ -202,21 +207,21 @@
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.238" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub Releases</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Claude Code v2.1.238 adds custom keybinding flavors and secured plugin marketplaces</p>
-      <p class="story-summary">The release introduces a keybindingFlavor setting (including a Bash-style "readline" mode) and lets plugin marketplaces mint short-lived HTTP auth tokens for catalog and archive fetches. It also adds self-hosted-runner flags for graceful shutdown handling on remote sessions.</p>
+    <a class="story-card" href="https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Changelog</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">GPT-6 Astra goes generally available in GitHub Copilot</p>
+      <p class="story-summary">GitHub made OpenAI's GPT-6 Astra generally available in Copilot for Pro+, Business, and Enterprise users across VS Code, JetBrains, Xcode, and the CLI, billed at provider list pricing. GitHub says the model plans and validates its own work mid-task, improving results on long-horizon autonomous coding tasks.</p>
     </a>
-    <a class="story-card" href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">CIO Dive</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">AWS and Google Cloud launch a multicloud interconnect partnership</p>
-      <p class="story-summary">The new AWS Interconnect service gives customers simplified, high-speed private connections between AWS and Google Cloud, with Microsoft Azure support planned to follow. It's aimed at easing multicloud deployments for enterprises running workloads across providers.</p>
+    <a class="story-card" href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Anthropic</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">Claude Developer Platform expands Managed Agents and webhooks</p>
+      <p class="story-summary">Anthropic's Claude Developer Platform added new Managed Agents capabilities this month, including model effort settings, expanded webhook coverage for environment and memory-store events, and session seeding. Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now also available on Claude Platform on AWS.</p>
     </a>
   </section>
 </main>
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · September 2, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · September 7, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
   </div>
 </footer>
 </body>
