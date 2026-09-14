@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Tech Recap — September 11, 2026</title>
-  <meta property="og:title" content="Daily Tech & AI Recap — September 11, 2026" />
-  <meta property="og:description" content="OpenAI's Agents API goes public, IDScan breach exposes 150M+ driver's licenses, Harvey hits a $15.6B valuation, a critical N-central zero-day is exploited, and California mandates independent AI audits." />
+  <title>Daily Tech Recap — September 14, 2026</title>
+  <meta property="og:title" content="Daily Tech & AI Recap — September 14, 2026" />
+  <meta property="og:description" content="Amodei calls on the AI industry to pace the frontier; GitLab&#x27;s CVSS-10 flaw is under active attack; Uber cuts 3,300 jobs." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aliyahf0ufi.github.io/daily-recap/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="header-top">
       <a class="logo" href="#"><span class="logo-dot"></span>Daily Recap</a>
-      <span class="date-badge">September 11, 2026</span>
+      <span class="date-badge">September 14, 2026</span>
     </div>
     <h1 class="headline">Tech & AI<br><span>Daily Brief</span></h1>
     <p class="subline">Auto-generated every morning · Curated for developers</p>
@@ -111,11 +111,11 @@
   <div class="tldr-strip">
     <p class="tldr-label">TL;DR — Top stories today</p>
     <ul class="tldr-list">
-      <li>OpenAI opened its Agents API in public beta, putting the Codex agent harness behind a single API call for all developers.</li>
-      <li>ID-verification vendor IDScan confirmed a breach exposing 150M+ driver's licenses after a hacker listed the data for sale.</li>
-      <li>Legal AI startup Harvey raised $550M at a $15.6B valuation, becoming the best-funded legal AI company.</li>
-      <li>A maximum-severity (CVSS 10.0) N-able N-central zero-day was exploited in the wild before a patch shipped.</li>
-      <li>California signed the first US law requiring independent AI audits, as OpenAI, Anthropic, Google and Microsoft warned of a 'limited window' to defend against AI-enabled cyberattacks.</li>
+      <li>Anthropic&#x27;s Dario Amodei is calling on the AI industry to deliberately slow capability gains, and Microsoft&#x27;s Nadella is publishing his own AI &quot;Code of Conduct&quot; in response.</li>
+      <li>Two AI safety researchers just quit Anthropic and Google DeepMind for independent risk-assessor METR, citing an OpenAI-Hugging Face agent-swarm incident.</li>
+      <li>GitLab&#x27;s CVSS-10 path traversal bug is under active attack — patch to 19.1.8/19.2.6/19.3.2 now if you&#x27;re self-hosting.</li>
+      <li>Uber is cutting ~3,300 jobs (10% of staff) as 2026’s tech layoffs already exceed all of 2025.</li>
+      <li>OpenClaw has become the most-starred non-aggregator project in GitHub history, surpassing React&#x27;s decade-old record.</li>
     </ul>
   </div>
   <section class="section theme-ai">
@@ -124,20 +124,20 @@
       <span class="section-title">AI &amp; LLM Updates</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">OpenAI</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">OpenAI opens public beta of its Agents API</p>
-      <p class="story-summary">OpenAI launched the Agents API in public beta on September 10, giving developers direct access to the Codex harness that manages orchestration, context and sandboxed execution. Early users report up to 4x lower latency and 60% lower cost per task.</p>
+    <a class="story-card" href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Dario Amodei</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Amodei calls for the AI industry to ‘pace the frontier’</p>
+      <p class="story-summary">In a Sept. 12 essay, Anthropic CEO Dario Amodei argued frontier labs should deliberately slow capability gains so safety work can keep up, citing recursive self-improvement and an OpenAI-Hugging Face agent-swarm incident as warning signs. Anthropic is unilaterally giving third-party evaluators permanent, employee-level access to verify its safety claims.</p>
+    </a>
+    <a class="story-card" href="https://www.nbcnews.com/tech/security/two-ai-researchers-leave-anthropic-google-safety-concerns-rcna597086" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">NBC News</span><span class="story-tag">AI</span></div>
+      <p class="story-headline">Two AI safety researchers quit Anthropic and Google DeepMind for METR</p>
+      <p class="story-summary">Joe Benton (ex-Anthropic) and Josh Engels (ex-Google DeepMind) left their safety teams to join independent AI-risk assessor METR, citing the same OpenAI-Hugging Face incident and a need for more transparency at frontier labs. It&#x27;s the latest in a string of high-profile safety-team departures this month.</p>
     </a>
     <a class="story-card" href="https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">Google, Anthropic and OpenAI unveil cyber-focused AI models and safeguards</p>
-      <p class="story-summary">All three labs rolled out defender-oriented model variants this week, including Google's Gemini 3.8 Flash Cyber and OpenAI's Astra clearing its Critical cybersecurity capability threshold. The releases come with new classifiers and access controls meant to limit misuse for offensive hacking.</p>
-    </a>
-    <a class="story-card" href="https://www.cbsnews.com/news/openai-anthropic-ai-cyber-threat-warning/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">CBS News</span><span class="story-tag">AI</span></div>
-      <p class="story-headline">AI leaders warn of a 'limited window' to defend against AI-enabled cyberattacks</p>
-      <p class="story-summary">In a joint open letter, executives from OpenAI, Anthropic, Google, Microsoft and other companies said the industry has only months to shore up cyber defenses before AI-assisted attacks become far more capable. The letter calls for urgent coordination between AI labs, governments and infrastructure operators.</p>
+      <p class="story-headline">Google, Anthropic and OpenAI roll out cyber-focused AI models and safeguards</p>
+      <p class="story-summary">The three labs introduced defender-oriented model variants, new safeguards and access programs aimed at cybersecurity use cases. The launch follows OpenAI&#x27;s Astra becoming the first model to trip its own &quot;critical cyber&quot; safety threshold earlier this month.</p>
     </a>
   </section>
   <section class="section theme-tech">
@@ -146,20 +146,20 @@
       <span class="section-title">Tech Industry News</span>
       <span class="section-count">3 stories</span>
     </div>
-    <a class="story-card" href="https://www.harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Harvey</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">Legal AI startup Harvey raises $550M at a $15.6B valuation</p>
-      <p class="story-summary">Harvey's new round, co-led by Lightspeed Venture Partners and Diffusion, brings its total funding past $1.5 billion just six months after its last raise. The company says annual recurring revenue has topped $400 million as it now serves more than 3,000 organizations.</p>
+    <a class="story-card" href="https://www.business-standard.com/technology/artificial-intelligence/ai-must-help-humanity-or-it-s-not-worth-pursuing-microsoft-ceo-nadella-126091400095_1.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Business Standard</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Microsoft to publish a ‘Code of Conduct’ for its own AI models</p>
+      <p class="story-summary">CEO Satya Nadella said Microsoft will publish behavior guidelines for its first-party MAI models on Sept. 14 for public consultation, responding to Dario Amodei&#x27;s call to &quot;pace the frontier.&quot; Nadella framed it as one of three pillars alongside broad AI access and enterprise control of models.</p>
     </a>
-    <a class="story-card" href="https://thenextweb.com/news/doj-nvidia-groq-licensing-antitrust-review" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">TNW</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">DOJ investigates whether Nvidia structured its Groq deal to dodge antitrust review</p>
-      <p class="story-summary">The Justice Department is examining whether Nvidia's non-exclusive licensing deal with chip startup Groq was designed to function like a merger without triggering formal antitrust review. Nvidia has used a similar licensing structure in other AI deals, including with Poolside.</p>
+    <a class="story-card" href="https://www.bloomberg.com/news/articles/2026-09-02/uber-to-cut-3-300-jobs-in-company-overhaul-to-reduce-management-layers" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Bloomberg</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">Uber to cut ~3,300 jobs in its biggest restructuring since the pandemic</p>
+      <p class="story-summary">CEO Dara Khosrowshahi is flattening management by 20% to refocus on ride-sharing, delivery and autonomous vehicles. It’s part of a broader 2026 layoff wave that has already pushed total tech job cuts past all of 2025.</p>
     </a>
-    <a class="story-card" href="http://www.gov.ca.gov/2026/09/09/governor-newsom-signs-first-in-the-nation-ai-safeguards-to-protect-californians-calls-on-the-federal-government-to-do-its-part/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Office of Gov. Newsom</span><span class="story-tag">Industry</span></div>
-      <p class="story-headline">California becomes first state to require independent AI audits</p>
-      <p class="story-summary">Governor Newsom signed AB 1405 and SB 813, creating a state registry for AI auditors and a framework for independently verifying AI systems. Enforcement of the auditor registration requirement begins January 1, 2029.</p>
+    <a class="story-card" href="https://www.trueup.io/layoffs" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">TrueUp</span><span class="story-tag">Industry</span></div>
+      <p class="story-headline">2026 tech layoffs already exceed all of 2025, tracker shows</p>
+      <p class="story-summary">Layoffs.fyi counted 128,536 tech workers cut across 299 companies through Sept. 10, with Uber, PayPal, Apple, Zomato and Oracle among the latest to trim staff. AI adoption is cited as a growing factor, particularly in support, content and basic coding roles.</p>
     </a>
   </section>
   <section class="section theme-sec">
@@ -168,15 +168,15 @@
       <span class="section-title">Cybersecurity</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://techcrunch.com/2026/09/10/id-verification-giant-idscan-confirms-data-breach-with-more-than-150-million-drivers-licenses-stolen/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">TechCrunch</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">ID verification giant IDScan confirms breach of 150M+ driver's licenses</p>
-      <p class="story-summary">IDScan.net (Veriscan) confirmed an intrusion after a hacker advertised a dataset of more than 153 million driver's licenses and other government IDs for sale. The company, used by over 7,500 businesses for identity verification, says the FBI is now investigating.</p>
-    </a>
-    <a class="story-card" href="https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html" target="_blank" rel="noopener">
+    <a class="story-card" href="https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">The Hacker News</span><span class="story-tag">Security</span></div>
-      <p class="story-headline">Critical N-able N-central zero-day exploited in the wild</p>
-      <p class="story-summary">CVE-2026-86218, a maximum-severity (CVSS 10.0) pre-auth remote code execution flaw in N-able's N-central RMM platform, was actively exploited before a patch shipped. CISA added it to its Known Exploited Vulnerabilities catalog with a federal remediation deadline of September 11.</p>
+      <p class="story-headline">GitLab&#x27;s CVSS-10 path traversal flaw is under active exploitation</p>
+      <p class="story-summary">CVE-2026-85706 lets unauthenticated attackers read arbitrary files via GitLab&#x27;s commits API; fixes shipped in 19.1.8, 19.2.6 and 19.3.2. CISA added it to its Known Exploited Vulnerabilities catalog on Sept. 11 with a Sept. 14 remediation deadline for federal agencies.</p>
+    </a>
+    <a class="story-card" href="https://senserva.com/microsoft-cve-vulnerability-management.html" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Senserva</span><span class="story-tag">Security</span></div>
+      <p class="story-headline">Microsoft&#x27;s September Patch Tuesday fixes 973 flaws, two exploited zero-days</p>
+      <p class="story-summary">The update covers 438 elevation-of-privilege bugs and 258 RCEs, including two zero-days under active attack — CVE-2026-85880 in Windows ALPC and CVE-2026-81963 in the Windows Update Stack. Windows Biometric Service alone accounted for 64 of the disclosed issues.</p>
     </a>
   </section>
   <section class="section theme-oss">
@@ -185,15 +185,15 @@
       <span class="section-title">Open Source</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">DeepSeek open-sources 'Harness,' an everything-is-a-plugin agent framework</p>
-      <p class="story-summary">DeepSeek's new coding agent harness treats the model adapter, tool registry, sandbox and agent loop as swappable plugins, letting developers bring their own model provider instead of being locked in. The MIT-licensed project passed 95,000 GitHub stars within two days of release and has kept growing rapidly since.</p>
+    <a class="story-card" href="https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">GitHub Blog</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">OpenClaw becomes the most-starred non-aggregator project in GitHub history</p>
+      <p class="story-summary">The self-hosted autonomous AI assistant, started as a solo weekend project in November 2025, has passed React’s decade-old star record and now sits around 250K+ stars. Maintainers are racing to professionalize its security practices as enterprise attention grows. (unconfirmed)</p>
     </a>
-    <a class="story-card" href="https://www.analyticsvidhya.com/blog/2026/09/top-github-repositories-august-2026/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">Analytics Vidhya</span><span class="story-tag">Open Source</span></div>
-      <p class="story-headline">Visual AI agent builders Langflow, Dify and Flowise keep climbing GitHub's trending charts</p>
-      <p class="story-summary">Low-code agent-building frameworks remain among the fastest-growing open-source projects this month, with Langflow, Dify and Flowise all adding tens of thousands of stars. (unconfirmed)</p>
+    <a class="story-card" href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">AI Agent Store</span><span class="story-tag">Open Source</span></div>
+      <p class="story-headline">Wavespace open-sources &#x27;Beyond the Chatbox,&#x27; a framework for agentic UI</p>
+      <p class="story-summary">The framework moves AI agent interfaces away from single chat streams toward generative UI with visible reasoning, explicit trust cues and human approval checkpoints. It&#x27;s aimed at teams building agent-native products that need more transparency than a plain chat window offers. (unconfirmed)</p>
     </a>
   </section>
   <section class="section theme-dev">
@@ -202,21 +202,21 @@
       <span class="section-title">Dev Tools &amp; Infra</span>
       <span class="section-count">2 stories</span>
     </div>
-    <a class="story-card" href="https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31/" target="_blank" rel="noopener">
-      <div class="story-meta"><span class="story-source">GitHub Changelog</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">GitHub Copilot adds Agent Merge and expands model choice</p>
-      <p class="story-summary">This week's Copilot release put Agent Merge into public preview, automatically resolving review feedback, failed checks and merge conflicts to get pull requests ready to land. Claude Fable 5.1 and Gemini 3.8 Flash also became available across paid Copilot tiers.</p>
+    <a class="story-card" href="https://releasebot.io/updates/github" target="_blank" rel="noopener">
+      <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">DevTools</span></div>
+      <p class="story-headline">GitHub Copilot CLI adds memory import, sandbox and subagent improvements</p>
+      <p class="story-summary">The update brings session/memory import commands, better shell completions, and refined MCP, streaming and subagent behavior to Copilot’s CLI, alongside the Sept. 10 deprecation of the MAI-Code-1-Flash model across Copilot experiences. It continues Copilot’s 2026 split into distinct agent surfaces.</p>
     </a>
     <a class="story-card" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">
       <div class="story-meta"><span class="story-source">Releasebot</span><span class="story-tag">DevTools</span></div>
-      <p class="story-headline">Claude Code ships policy and skill diagnostics, clearer model naming</p>
-      <p class="story-summary">This week's Claude Code update adds policy and skill diagnostics, larger inline command and task output limits, and a /model picker that shows recognized model names instead of raw provider IDs. It also improves VS Code workflows and startup reliability. (unconfirmed)</p>
+      <p class="story-headline">Claude Code v2.1.260 adds a side-by-side diff panel for uncommitted changes</p>
+      <p class="story-summary">The Sept. 3 update makes it easier to review multi-file edits before committing, following v2.1.258&#x27;s fixes for launch failures on older Macs and remote-session issues. Claude Fable 5.1 remains the default model as of the latest releases. (unconfirmed)</p>
     </a>
   </section>
 </main>
 <footer>
   <div class="container">
-    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · September 11, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
+    <p>Curated by <a href="https://www.linkedin.com/in/ali-yah-foufi" target="_blank" rel="noopener">Ali Yahfoufi</a> · Auto-generated by Claude Code · September 14, 2026<br>Sources linked on each card · Stories from the last 24 hours only</p>
   </div>
 </footer>
 </body>
